@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Brief Studio</title>
+    <meta
+      name="description"
+      content="AI-powered candidate briefing platform that helps ambitious job seekers stand out with recruiter-forwardable, role-specific briefs."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <div class="brand">Candidate Brief Studio</div>
+        <a class="btn btn-ghost" href="#cta">Get Early Access</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <p class="eyebrow">For serious candidates in competitive hiring markets</p>
+        <h1>Be the candidate recruiters can confidently forward.</h1>
+        <p class="hero-copy">
+          Transform your resume + job description into a premium, role-tailored candidate brief
+          that helps hiring teams quickly understand why you are the right fit.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#cta">Join Waitlist</a>
+          <a class="btn btn-secondary" href="#features">See Features</a>
+        </div>
+        <div class="hero-metrics">
+          <article>
+            <h3>&lt;20 min</h3>
+            <p>from upload to polished brief</p>
+          </article>
+          <article>
+            <h3>3 stages</h3>
+            <p>post-screen, pre-interview, post-interview</p>
+          </article>
+          <article>
+            <h3>Evidence-backed</h3>
+            <p>every claim tied to your real experience</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="features" class="section container">
+        <h2>Purpose-built for interview conversion, not generic job search automation.</h2>
+        <div class="feature-grid">
+          <article class="card">
+            <h3>Recruiter-forwardable Brief</h3>
+            <p>
+              A company-branded HTML brief with role-fit summary, impact evidence, and clear
+              messaging hiring managers can act on.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Interview Prep Pack</h3>
+            <p>
+              Role-specific talking points, likely panel questions, and strategic responses aligned
+              to the exact role outcomes.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Post-interview Leave-Behind</h3>
+            <p>
+              Send a polished follow-up artifact that reinforces fit, clarifies value, and keeps your
+              candidacy top of mind.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Evidence Graph</h3>
+            <p>
+              Avoid AI fluff: each claim is mapped to resume bullets, achievements, or your own notes
+              so your story stays credible.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Voice Lock</h3>
+            <p>
+              Outputs sound like you—not generic AI copy—with configurable tone controls for
+              recruiter, manager, and panel contexts.
+            </p>
+          </article>
+          <article class="card">
+            <h3>90-Day Preview</h3>
+            <p>
+              Show how you'd approach the role with a high-confidence first 90 days plan based on
+              business priorities.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="workflow">
+          <div>
+            <p class="eyebrow">How it works</p>
+            <h2>From resume to decision-ready candidate story in 4 guided steps.</h2>
+          </div>
+          <ol>
+            <li><strong>Upload context:</strong> resume, role description, and recruiter notes.</li>
+            <li><strong>Map fit:</strong> AI connects role outcomes to your strongest evidence.</li>
+            <li><strong>Refine:</strong> edit messaging while trust checks remove weak claims.</li>
+            <li><strong>Share:</strong> export recruiter-forwardable brief + outreach messages.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="cta" class="section cta">
+        <div class="container cta-wrap">
+          <div>
+            <p class="eyebrow">Early access</p>
+            <h2>Stand out with substance, not noise.</h2>
+            <p>Join the waitlist to get the first release and launch pricing.</p>
+          </div>
+          <form class="waitlist-form" onsubmit="event.preventDefault(); this.reset(); alert('Thanks — you are on the waitlist!');">
+            <label for="email" class="sr-only">Email address</label>
+            <input id="email" type="email" placeholder="you@domain.com" required />
+            <button class="btn" type="submit">Request Access</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Candidate Brief Studio · Build your candidacy like a product.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
