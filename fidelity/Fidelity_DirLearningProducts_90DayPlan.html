@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First 90 Days | Director, Learning Products | Shika Mahdavi, PhD</title>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* GHL compatibility fixes */
+html, body { width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; margin: 0; padding: 0; }
+.block.bg-grid { background-image: none !important; }
+.c-section, .c-wrapper, .c-row, .c-container { max-width: 100% !important; width: 100% !important; padding-left: 0 !important; padding-right: 0 !important; }
+
+.fid-app {
+  --g900: #0B3D2C; --g800: #10492F; --g700: #14563D; --g600: #1C6B4A; --g500: #2E8457; --g300: #8FC3A3; --g100: #E4EFE8; --g50: #F2F7F4;
+  --ink: #14201A; --ink2: #34423B; --muted: #66756D; --line: #DCE5DF; --soft: #F7F9F8; --white: #FFFFFF;
+  --amber: #8A5A00; --amber-bg: #FFF5E1; --amber-line: #F0D8A8;
+  --rose: #8E2B2B; --rose-bg: #FBEDEC;
+  --serif: 'Fraunces', Georgia, serif; --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif; --mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  width: 100%; background: var(--white); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+}
+.fid-app *, .fid-app *::before, .fid-app *::after { box-sizing: border-box; }
+.fid-app h1, .fid-app h2, .fid-app h3, .fid-app h4 { font-family: var(--serif); font-weight: 500; color: var(--ink); margin: 0; letter-spacing: -0.01em; line-height: 1.15; }
+.fid-app p { margin: 0 0 1rem; }
+.fid-app a { color: var(--g700); }
+.fid-app button { font-family: var(--sans); cursor: pointer; }
+.fid-app ul { margin: 0; padding-left: 1.1rem; }
+.fid-app li { margin-bottom: .4rem; }
+
+/* progress + nav */
+.fid-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--g500); z-index: 60; transition: width .1s linear; }
+.fid-nav { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); width: 100%; }
+.fid-nav-inner { display: flex; align-items: center; gap: 1.5rem; padding: .7rem 5vw; width: 100%; }
+.fid-brand { font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--g700); white-space: nowrap; font-weight: 500; }
+.fid-links { display: flex; gap: .25rem; overflow-x: auto; scrollbar-width: none; flex: 1; }
+.fid-links::-webkit-scrollbar { display: none; }
+.fid-links a { font-size: .8rem; color: var(--ink2); text-decoration: none; padding: .35rem .65rem; border-radius: 999px; white-space: nowrap; transition: background .2s, color .2s; }
+.fid-links a:hover { background: var(--g50); color: var(--g700); }
+.fid-links a.active { background: var(--g700); color: #fff; }
+.fid-print-btn { border: 1px solid var(--g700); background: #fff; color: var(--g700); font-size: .78rem; font-weight: 600; padding: .45rem .9rem; border-radius: 6px; white-space: nowrap; }
+.fid-print-btn:hover { background: var(--g700); color: #fff; }
+
+/* sections */
+.ml-section { padding: 5.5rem 5vw; width: 100%; border-bottom: 1px solid var(--line); }
+.ml-section.alt { background: var(--soft); }
+.ml-section.dark { background: var(--g900); color: #E7F0EA; }
+.ml-section.dark h2, .ml-section.dark h3 { color: #fff; }
+.ml-section-inner { width: 100%; }
+.kicker { font-family: var(--mono); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--g600); margin-bottom: .9rem; display: block; }
+.dark .kicker { color: var(--g300); }
+.sec-head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 3rem; align-items: end; margin-bottom: 2.75rem; }
+.sec-head h2 { font-size: clamp(2rem, 3.6vw, 3rem); }
+.sec-head h2 em { font-style: italic; color: var(--g600); }
+.dark .sec-head h2 em { color: var(--g300); }
+.sec-head p { color: var(--muted); max-width: 640px; margin: 0; font-size: 1.02rem; }
+.dark .sec-head p { color: #B9CEC1; }
+.lede { font-size: 1.1rem; color: var(--ink2); max-width: 760px; }
+.bh { display: inline-flex; align-items: center; gap: .45rem; font-family: var(--mono); font-size: .7rem; letter-spacing: .04em; color: var(--g700); background: var(--g50); border: 1px solid var(--g100); padding: .3rem .65rem; border-radius: 999px; margin: 0 .4rem .4rem 0; }
+.bh::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--g500); }
+.dark .bh { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.14); color: #CFE3D6; }
+.label-demo { display: inline-block; font-family: var(--mono); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber-line); padding: .3rem .65rem; border-radius: 4px; }
+.label-hyp { display: inline-block; font-family: var(--mono); font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; background: var(--g50); color: var(--g700); border: 1px dashed var(--g500); padding: .3rem .65rem; border-radius: 4px; }
+
+/* reveal */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+/* hero */
+.ml-hero { background: var(--g900); color: #E7F0EA; width: 100%; position: relative; overflow: hidden; }
+.ml-hero::after { content: ""; position: absolute; right: -10vw; top: -20vw; width: 55vw; height: 55vw; border-radius: 50%; border: 1px solid rgba(255,255,255,.06); pointer-events: none; }
+.ml-hero-inner { width: 100%; padding: 5.5rem 5vw 4rem; display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 4rem; align-items: center; position: relative; z-index: 1; }
+.hero-badge { display: inline-flex; gap: .6rem; align-items: center; font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--g300); border: 1px solid rgba(143,195,163,.35); padding: .4rem .8rem; border-radius: 999px; margin-bottom: 1.6rem; }
+.hero-badge span { width: 7px; height: 7px; border-radius: 50%; background: var(--g300); }
+.ml-hero h1 { color: #fff; font-size: clamp(2.6rem, 5.6vw, 4.6rem); line-height: 1.04; margin-bottom: .9rem; }
+.ml-hero h1 em { font-style: italic; color: var(--g300); }
+.hero-role { font-family: var(--mono); font-size: .85rem; color: #B9CEC1; letter-spacing: .04em; margin-bottom: 1.8rem; }
+.hero-sub { font-family: var(--serif); font-size: clamp(1.15rem, 1.8vw, 1.45rem); color: #fff; margin-bottom: 1.4rem; font-style: italic; }
+.hero-lede { font-size: 1.08rem; color: #D3E2D9; max-width: 700px; margin-bottom: 1.6rem; }
+.hero-callout { font-family: var(--mono); font-size: .8rem; color: #CFE3D6; border-left: 2px solid var(--g300); padding: .3rem 0 .3rem 1rem; margin-bottom: 2rem; max-width: 640px; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: .8rem; }
+.btn { display: inline-flex; align-items: center; gap: .5rem; font-weight: 600; font-size: .92rem; padding: .85rem 1.3rem; border-radius: 8px; text-decoration: none; border: 1px solid transparent; transition: transform .2s, box-shadow .2s, background .2s; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.14); }
+.btn-solid { background: var(--g500); color: #fff !important; }
+.btn-solid:hover { background: var(--g600); }
+.btn-ghost { background: transparent; color: #fff !important; border-color: rgba(255,255,255,.35); }
+.btn-dark { background: var(--g700); color: #fff !important; }
+.btn-line { background: #fff; color: var(--g700) !important; border-color: var(--g700); }
+.hero-side { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.hero-photo { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; object-position: center top; border: 3px solid var(--g300); display: flex; align-items: center; justify-content: center; background: var(--g700); font-family: var(--serif); font-size: 2.6rem; color: #fff; }
+.hero-name { font-family: var(--serif); font-size: 1.3rem; color: #fff; margin-top: 1rem; }
+.hero-title-mono { font-family: var(--mono); font-size: .72rem; color: var(--g300); letter-spacing: .05em; margin-top: .2rem; margin-bottom: 1.6rem; }
+.hero-stats { width: 100%; display: grid; gap: .9rem; text-align: left; }
+.hero-stat { border-top: 1px solid rgba(255,255,255,.12); padding-top: .8rem; display: grid; grid-template-columns: 92px 1fr; gap: 1rem; align-items: baseline; }
+.hero-stat b { font-family: var(--serif); font-size: 1.6rem; color: #fff; font-weight: 500; }
+.hero-stat span { font-size: .85rem; color: #B9CEC1; }
+.ml-hero-strip { padding: 1.5rem 5vw; width: 100%; display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1.5rem; border-top: 1px solid rgba(255,255,255,.1); background: var(--g800); position: relative; z-index: 1; }
+.strip-cell { font-family: var(--mono); font-size: .74rem; color: #B9CEC1; letter-spacing: .03em; }
+.strip-cell b { display: block; font-family: var(--serif); font-size: 1.05rem; color: #fff; font-weight: 500; letter-spacing: 0; margin-bottom: .2rem; }
+
+/* exec summary */
+.exec-grid { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(0,1fr); gap: 3rem; }
+.exec-points { counter-reset: ep; display: grid; gap: 0; }
+.exec-point { display: grid; grid-template-columns: 48px 1fr; gap: 1rem; padding: 1.25rem 0; border-top: 1px solid var(--line); }
+.exec-point::before { counter-increment: ep; content: "0" counter(ep); font-family: var(--mono); color: var(--g500); font-size: .85rem; padding-top: .2rem; }
+.exec-point h3 { font-size: 1.25rem; margin-bottom: .35rem; }
+.exec-point p { color: var(--ink2); margin: 0; }
+.behavior-table { width: 100%; border-collapse: collapse; font-size: .88rem; background: #fff; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.behavior-table th { font-family: var(--mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); text-align: left; padding: .8rem 1rem; background: var(--g50); border-bottom: 1px solid var(--line); font-weight: 500; }
+.behavior-table td { padding: .7rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.behavior-table tr:last-child td { border-bottom: none; }
+.behavior-table td:first-child { font-weight: 600; color: var(--g700); white-space: nowrap; }
+.behavior-table a { font-family: var(--mono); font-size: .72rem; text-decoration: none; white-space: nowrap; }
+.behavior-table tr { transition: background .15s; }
+.behavior-table tbody tr:hover { background: var(--g50); }
+
+/* tabs */
+.tabbar { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.6rem; }
+.tabbar button { border: 1px solid var(--line); background: #fff; color: var(--ink2); padding: .6rem 1.1rem; border-radius: 8px; font-size: .9rem; font-weight: 500; transition: all .2s; }
+.tabbar button:hover { border-color: var(--g500); color: var(--g700); }
+.tabbar button.on { background: var(--g700); border-color: var(--g700); color: #fff; }
+.dark .tabbar button { background: transparent; color: #CFE3D6; border-color: rgba(255,255,255,.2); }
+.dark .tabbar button.on { background: var(--g300); color: var(--g900); border-color: var(--g300); }
+[data-panel] { display: none; }
+[data-panel].on { display: block; animation: fadeUp .4s ease; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* heard */
+.heard-voices { display: grid; grid-template-columns: minmax(0,1fr); gap: 1rem; }
+.voice-card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 2rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2.5rem; }
+.voice-card h3 { font-size: 1.5rem; margin-bottom: .8rem; }
+.voice-card .quote { font-family: var(--serif); font-style: italic; font-size: 1.25rem; color: var(--g700); border-left: 3px solid var(--g500); padding-left: 1rem; margin-bottom: 1rem; }
+.voice-card ul li { color: var(--ink2); }
+.filter-row { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin: 2.5rem 0 1.2rem; }
+.filter-row .fl { font-family: var(--mono); font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-right: .5rem; }
+.chip-btn { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: .4rem .9rem; font-size: .82rem; color: var(--ink2); }
+.chip-btn.on { background: var(--g700); color: #fff; border-color: var(--g700); }
+.theme-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+.theme-card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.3rem; cursor: pointer; transition: border-color .2s, box-shadow .2s, transform .2s; position: relative; }
+.theme-card:hover { border-color: var(--g500); box-shadow: 0 6px 18px rgba(20,86,61,.08); transform: translateY(-2px); }
+.theme-card .src { font-family: var(--mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .08em; color: var(--g600); }
+.theme-card h4 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin: .35rem 0 .3rem; }
+.theme-card .heard { font-size: .88rem; color: var(--ink2); margin: 0; }
+.theme-card .means { display: none; font-size: .88rem; color: var(--g800); background: var(--g50); border-radius: 6px; padding: .7rem .8rem; margin-top: .8rem; }
+.theme-card .means b { font-family: var(--mono); font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; display: block; color: var(--g600); margin-bottom: .2rem; font-weight: 500; }
+.theme-card.open .means { display: block; }
+.theme-card .plus { position: absolute; right: 1rem; top: 1rem; font-family: var(--mono); color: var(--g500); transition: transform .2s; }
+.theme-card.open .plus { transform: rotate(45deg); }
+.theme-card.hide { display: none; }
+
+/* validate */
+.val-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.2rem; }
+.val-meter { flex: 1; min-width: 240px; max-width: 420px; }
+.val-meter-bar { height: 8px; background: var(--line); border-radius: 999px; overflow: hidden; margin-top: .4rem; }
+.val-meter-bar i { display: block; height: 100%; width: 0; background: var(--g500); transition: width .3s; }
+.val-meter small { font-family: var(--mono); font-size: .72rem; color: var(--muted); }
+.acc { border: 1px solid var(--line); border-radius: 10px; background: #fff; overflow: hidden; }
+.acc-item { border-bottom: 1px solid var(--line); }
+.acc-item:last-child { border-bottom: none; }
+.acc-head { display: grid; grid-template-columns: 28px 1fr auto; gap: .9rem; align-items: center; padding: 1rem 1.2rem; cursor: pointer; }
+.acc-head:hover { background: var(--g50); }
+.acc-head .t { font-weight: 600; font-size: .98rem; }
+.acc-head .ar { font-family: var(--mono); color: var(--g500); transition: transform .2s; }
+.acc-item.open .acc-head .ar { transform: rotate(90deg); }
+.acc-body { display: none; padding: 0 1.2rem 1.2rem 3.9rem; color: var(--ink2); font-size: .93rem; }
+.acc-item.open .acc-body { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.acc-body b { font-family: var(--mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--g600); display: block; margin-bottom: .2rem; font-weight: 500; }
+.chk { width: 22px; height: 22px; border-radius: 5px; border: 1.5px solid var(--g500); display: flex; align-items: center; justify-content: center; background: #fff; color: transparent; font-size: .8rem; padding: 0; }
+.chk.on { background: var(--g600); color: #fff; border-color: var(--g600); }
+.acc-item.done .t { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--g300); }
+
+/* 90 day plan */
+.plan-head { text-align: left; margin-bottom: 2.5rem; }
+.plan-head h2 { font-size: clamp(2.1rem, 4vw, 3.2rem); }
+.plan-head .role { font-family: var(--mono); font-size: .8rem; color: var(--muted); margin-top: .6rem; }
+.plan-head .sub { font-family: var(--serif); font-style: italic; font-size: 1.3rem; color: var(--g700); margin-top: .9rem; }
+.phase-tabs { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.phase-tab { text-align: left; border: 1px solid var(--line); background: #fff; border-radius: 12px; padding: 1.2rem 1.3rem; transition: all .2s; }
+.phase-tab .d { font-family: var(--mono); font-size: .72rem; color: var(--muted); letter-spacing: .06em; }
+.phase-tab .n { font-family: var(--serif); font-size: 1.35rem; color: var(--ink); display: block; margin-top: .2rem; }
+.phase-tab .bar { height: 3px; background: var(--line); border-radius: 3px; margin-top: .9rem; overflow: hidden; }
+.phase-tab .bar i { display: block; height: 100%; background: var(--g500); width: 0; transition: width .5s; }
+.phase-tab.on { border-color: var(--g700); box-shadow: 0 8px 22px rgba(20,86,61,.1); }
+.phase-tab.on .bar i { width: 100%; }
+.phase-body { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 2.2rem; display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); gap: 3rem; }
+.phase-body h3 { font-size: 1.6rem; margin-bottom: .4rem; }
+.phase-body .intent { color: var(--ink2); margin-bottom: 1.3rem; }
+.phase-body h4 { font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--g600); margin: 1.3rem 0 .7rem; font-weight: 500; }
+.obj-list { columns: 2; column-gap: 2rem; padding-left: 1rem; }
+.obj-list li { break-inside: avoid; font-size: .93rem; color: var(--ink2); }
+.deliv { background: var(--g50); border-radius: 10px; padding: 1.5rem; }
+.deliv ol { padding-left: 1.2rem; margin: 0; }
+.deliv li { font-size: .93rem; margin-bottom: .55rem; }
+.deliv li::marker { font-family: var(--mono); color: var(--g500); }
+
+/* consulting flow */
+.flow-wrap { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 3rem; align-items: start; }
+.flow { display: flex; flex-direction: column; align-items: stretch; }
+.flow-step { border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: .75rem 1rem; text-align: left; display: flex; gap: .8rem; align-items: center; font-size: .92rem; font-weight: 500; color: var(--ink); transition: all .2s; width: 100%; }
+.flow-step .num { font-family: var(--mono); font-size: .7rem; color: var(--g500); width: 22px; flex-shrink: 0; }
+.flow-step:hover { border-color: var(--g500); }
+.flow-step.on { background: var(--g700); color: #fff; border-color: var(--g700); }
+.flow-step.on .num { color: var(--g300); }
+.flow-step.key { border-style: dashed; border-color: var(--g500); }
+.flow-arrow { text-align: center; color: var(--g300); font-size: .8rem; line-height: 1; padding: .25rem 0; }
+.flow-detail { position: sticky; top: 90px; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 2rem; min-height: 360px; }
+.flow-detail h3 { font-size: 1.7rem; margin: .3rem 0 .8rem; }
+.flow-detail .qs { background: var(--g50); border-radius: 8px; padding: 1rem 1.2rem; margin: 1rem 0; }
+.flow-detail .qs b, .flow-detail .guard b { font-family: var(--mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--g600); display: block; margin-bottom: .4rem; font-weight: 500; }
+.flow-detail .guard { border-left: 3px solid var(--g500); padding: .3rem 0 .3rem 1rem; color: var(--ink2); font-size: .93rem; }
+.not-default { display: flex; gap: 1rem; align-items: center; background: var(--g900); color: #fff; border-radius: 10px; padding: 1.1rem 1.4rem; margin-top: 2rem; }
+.not-default b { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; }
+.not-default span { color: #B9CEC1; font-size: .92rem; }
+.iv-chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+.iv-chip { border: 1px solid var(--g500); color: var(--g700); background: #fff; border-radius: 999px; padding: .45rem .9rem; font-size: .85rem; font-weight: 500; }
+.iv-chip.on { background: var(--g600); color: #fff; }
+.iv-desc { font-size: .93rem; color: var(--ink2); min-height: 3rem; }
+
+/* any door */
+.door-wrap { display: grid; grid-template-columns: minmax(0, 260px) 60px minmax(0, 1fr) 60px minmax(0, 300px); align-items: center; gap: 0; }
+.doors { display: grid; gap: .6rem; }
+.door { border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.04); color: #E7F0EA; border-radius: 10px; padding: .85rem 1rem; text-align: left; font-size: .92rem; font-weight: 500; display: flex; justify-content: space-between; align-items: center; transition: all .25s; }
+.door small { font-family: var(--mono); font-size: .66rem; color: #9DB8A8; }
+.door:hover { border-color: var(--g300); }
+.door.on { background: var(--g300); color: var(--g900); border-color: var(--g300); }
+.door.on small { color: var(--g800); }
+.door-lines { height: 100%; display: flex; align-items: center; justify-content: center; }
+.door-lines svg { width: 100%; height: 340px; }
+.door-lines path { stroke: rgba(143,195,163,.35); stroke-width: 1.5; fill: none; transition: stroke .3s; }
+.door-lines path.on { stroke: var(--g300); stroke-width: 2.5; }
+.engine { border: 1px solid rgba(143,195,163,.4); border-radius: 14px; padding: 1.4rem; background: rgba(255,255,255,.03); }
+.engine-title { font-family: var(--mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--g300); margin-bottom: .9rem; }
+.engine-step { background: rgba(255,255,255,.06); border-radius: 8px; padding: .75rem 1rem; margin-bottom: .55rem; font-size: .93rem; color: #fff; display: flex; justify-content: space-between; gap: 1rem; transition: background .3s; }
+.engine-step small { font-family: var(--mono); color: #9DB8A8; font-size: .66rem; text-align: right; }
+.engine-step.pulse { background: rgba(143,195,163,.25); }
+.outcome-box { background: #fff; color: var(--ink); border-radius: 14px; padding: 1.4rem; }
+.outcome-box h4 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: .5rem; }
+.outcome-box p { font-size: .9rem; color: var(--ink2); }
+.outcome-box .tag { font-family: var(--mono); font-size: .66rem; color: var(--g600); text-transform: uppercase; letter-spacing: .08em; }
+.consist { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+.consist > div { border-radius: 12px; padding: 1.5rem; }
+.consist .before { border: 1px solid rgba(255,255,255,.15); }
+.consist .after { background: rgba(143,195,163,.12); border: 1px solid rgba(143,195,163,.4); }
+.consist h4 { font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--g300); margin-bottom: .8rem; font-weight: 500; }
+.consist p, .consist li { color: #D3E2D9; font-size: .93rem; }
+
+/* prototype */
+.notice { display: flex; gap: .8rem; align-items: flex-start; background: var(--amber-bg); border: 1px solid var(--amber-line); color: var(--amber); padding: 1rem 1.2rem; border-radius: 10px; font-size: .92rem; margin-bottom: 1.8rem; }
+.notice b { font-family: var(--mono); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; display: block; }
+.notice .ic { font-family: var(--mono); font-weight: 700; border: 1.5px solid var(--amber); border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: .75rem; }
+.proto { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 1.5rem; align-items: start; }
+.panel { background: #fff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 1.3rem; border-bottom: 1px solid var(--line); background: var(--g50); }
+.panel-head .pt { font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--g700); font-weight: 500; }
+.panel-body { padding: 1.4rem 1.3rem; }
+.fld { margin-bottom: 1.1rem; }
+.fld label, .fld .lbl { display: block; font-size: .85rem; font-weight: 600; margin-bottom: .45rem; color: var(--ink); }
+.fld textarea, .fld input[type=text], .fld select { width: 100%; font-family: var(--sans); font-size: .93rem; padding: .7rem .8rem; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); }
+.fld textarea { min-height: 84px; resize: vertical; }
+.fld textarea:focus, .fld input:focus, .fld select:focus { outline: 2px solid var(--g300); border-color: var(--g500); }
+.ex-row { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.1rem; }
+.ex-btn { border: 1px dashed var(--g500); background: var(--g50); color: var(--g700); border-radius: 8px; padding: .5rem .8rem; font-size: .82rem; font-weight: 500; text-align: left; }
+.ex-btn:hover { background: var(--g100); }
+.opt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; }
+.opt { display: flex; gap: .55rem; align-items: center; border: 1px solid var(--line); border-radius: 8px; padding: .55rem .7rem; font-size: .88rem; cursor: pointer; transition: border-color .15s, background .15s; }
+.opt:hover { border-color: var(--g500); }
+.opt input { accent-color: var(--g600); margin: 0; }
+.opt.sel { border-color: var(--g600); background: var(--g50); }
+.steps-dots { display: flex; gap: .3rem; }
+.steps-dots i { width: 22px; height: 4px; border-radius: 2px; background: var(--line); display: block; }
+.steps-dots i.done { background: var(--g500); }
+.steps-dots i.cur { background: var(--g700); }
+.qstep { display: none; }
+.qstep.on { display: block; animation: fadeUp .3s ease; }
+.qnum { font-family: var(--mono); font-size: .7rem; color: var(--g600); letter-spacing: .08em; }
+.qtitle { font-family: var(--serif); font-size: 1.3rem; margin: .2rem 0 .3rem; }
+.qwhy { font-size: .84rem; color: var(--muted); margin-bottom: 1rem; }
+.nav-row { display: flex; justify-content: space-between; gap: .6rem; margin-top: 1.2rem; flex-wrap: wrap; }
+.pbtn { border: 1px solid var(--g700); background: var(--g700); color: #fff; padding: .65rem 1.1rem; border-radius: 8px; font-size: .88rem; font-weight: 600; }
+.pbtn:hover { background: var(--g800); }
+.pbtn.sec { background: #fff; color: var(--g700); }
+.pbtn.sec:hover { background: var(--g50); }
+.pbtn:disabled { opacity: .4; cursor: not-allowed; }
+.pbtn.ghost { border-color: var(--line); background: #fff; color: var(--ink2); }
+.loaded-note { font-size: .82rem; color: var(--g700); background: var(--g50); border-radius: 6px; padding: .5rem .7rem; margin-bottom: 1rem; display: none; }
+.out-empty { text-align: center; padding: 3.5rem 1.5rem; color: var(--muted); }
+.out-empty .big { font-family: var(--serif); font-size: 1.4rem; color: var(--ink); margin-bottom: .5rem; }
+.thinking { display: none; padding: 3rem 1.5rem; text-align: center; color: var(--g700); font-family: var(--mono); font-size: .82rem; }
+.thinking .dots i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--g500); margin: 0 3px; animation: blink 1s infinite; }
+.thinking .dots i:nth-child(2) { animation-delay: .15s; } .thinking .dots i:nth-child(3) { animation-delay: .3s; }
+@keyframes blink { 0%,100% { opacity: .2; } 50% { opacity: 1; } }
+.dx { display: none; }
+.dx-block { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.dx-block:last-child { border-bottom: none; }
+.dx-label { font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: .4rem; }
+.dx-head { font-family: var(--serif); font-size: 1.45rem; color: var(--g800); line-height: 1.2; }
+.dx-block ul { padding-left: 1.1rem; font-size: .92rem; color: var(--ink2); }
+.dx-flag { font-size: .85rem; color: var(--amber); background: var(--amber-bg); border-radius: 6px; padding: .5rem .7rem; margin-bottom: .4rem; }
+.dx-not { background: var(--rose-bg); border-radius: 8px; padding: .9rem 1rem; }
+.dx-not .x { color: var(--rose); font-weight: 600; font-size: .95rem; }
+.dx-not p { font-size: .88rem; color: var(--ink2); margin: .4rem 0 0; }
+.conf { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.conf-bars { display: flex; gap: 4px; }
+.conf-bars i { width: 34px; height: 10px; border-radius: 3px; background: var(--line); display: block; }
+.conf-bars.l1 i:nth-child(1), .conf-bars.l2 i:nth-child(-n+2), .conf-bars.l3 i { background: var(--g600); }
+.conf-bars.l1 i:nth-child(1) { background: var(--amber); }
+.conf-val { font-weight: 700; font-size: 1rem; }
+.conf-why { font-size: .82rem; color: var(--muted); margin-top: .4rem; }
+.human { display: flex; gap: .8rem; align-items: center; background: var(--g900); color: #fff; border-radius: 10px; padding: 1rem 1.2rem; margin-top: .6rem; }
+.human b { font-size: .95rem; }
+.human span { font-size: .82rem; color: #B9CEC1; display: block; }
+.review-row { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .7rem; }
+.review-log { font-size: .84rem; color: var(--g700); margin-top: .6rem; font-family: var(--mono); }
+.route-note { font-family: var(--mono); font-size: .72rem; color: var(--g700); background: var(--g50); padding: .5rem .7rem; border-radius: 6px; }
+
+/* dashboard */
+.dash-controls { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; }
+.dash-controls select { font-family: var(--sans); font-size: .9rem; padding: .55rem .8rem; border-radius: 8px; border: 1px solid var(--line); }
+.kpis { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.kpi { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.1rem 1.2rem; }
+.kpi .k { font-family: var(--mono); font-size: .66rem; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.kpi .v { font-family: var(--serif); font-size: 2rem; color: var(--ink); line-height: 1.1; margin-top: .3rem; }
+.kpi .s { font-size: .78rem; color: var(--muted); }
+.dash-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 1.5rem; }
+.chart-card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.4rem; }
+.chart-card h4 { font-family: var(--sans); font-size: .98rem; font-weight: 600; margin-bottom: .2rem; }
+.chart-card .cs { font-size: .8rem; color: var(--muted); margin-bottom: 1rem; }
+.hbar { display: grid; grid-template-columns: 150px 1fr 40px; gap: .8rem; align-items: center; margin-bottom: .6rem; font-size: .85rem; cursor: default; }
+.hbar .track { height: 14px; background: var(--g50); border-radius: 4px; overflow: hidden; }
+.hbar .fill { height: 100%; border-radius: 4px; background: var(--g600); width: 0; transition: width .7s ease; }
+.hbar .val { font-family: var(--mono); font-size: .8rem; text-align: right; color: var(--ink2); }
+.hbar:hover .fill { background: var(--g800); }
+.stack-row { display: grid; grid-template-columns: 150px 1fr 34px; gap: .8rem; align-items: center; margin-bottom: .55rem; font-size: .85rem; }
+.stack { display: flex; height: 16px; border-radius: 4px; overflow: hidden; background: var(--g50); }
+.stack span { height: 100%; transition: width .6s; border-right: 2px solid #fff; }
+.stack span:last-child { border-right: none; }
+.legend { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: .9rem; font-size: .78rem; color: var(--ink2); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: .35rem; vertical-align: -1px; }
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: center; }
+.compare .big { font-family: var(--serif); font-size: 2.6rem; line-height: 1; }
+.compare small { font-size: .8rem; color: var(--muted); }
+.theme-list { display: grid; gap: .5rem; }
+.theme-row { display: grid; grid-template-columns: 1fr auto auto; gap: .8rem; align-items: center; font-size: .88rem; padding: .55rem .7rem; border: 1px solid var(--line); border-radius: 8px; }
+.sig { font-family: var(--mono); font-size: .64rem; text-transform: uppercase; letter-spacing: .06em; padding: .2rem .5rem; border-radius: 4px; background: var(--g50); color: var(--g700); white-space: nowrap; }
+.sig.mgr { background: #EAF1FB; color: #24508A; }
+.sig.proc { background: var(--amber-bg); color: var(--amber); }
+.sig.tech { background: #F1ECFA; color: #5B3E96; }
+.theme-row .n { font-family: var(--mono); font-size: .8rem; }
+.insights { display: grid; gap: .6rem; }
+.insight { border-left: 3px solid var(--g500); padding: .3rem 0 .3rem .9rem; font-size: .9rem; color: var(--ink2); }
+.insight b { color: var(--ink); }
+
+/* prioritization */
+.prio { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+.req-tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.crit-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+.crit-table th { font-family: var(--mono); font-size: .64rem; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); font-weight: 500; }
+.crit-table td { padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: middle; }
+.crit-table td.cn { font-weight: 500; }
+.crit-table td.cn small { display: block; font-weight: 400; color: var(--muted); font-size: .74rem; }
+.crit-table input[type=range] { width: 100%; accent-color: var(--g600); }
+.crit-table input[type=number] { width: 54px; font-family: var(--mono); font-size: .8rem; padding: .3rem; border: 1px solid var(--line); border-radius: 5px; }
+.crit-table .r { font-family: var(--mono); font-size: .8rem; width: 24px; text-align: center; }
+.crit-table .ct { font-family: var(--mono); font-size: .8rem; text-align: right; width: 48px; color: var(--g700); }
+.inv { font-family: var(--mono); font-size: .6rem; text-transform: uppercase; background: var(--amber-bg); color: var(--amber); padding: .1rem .35rem; border-radius: 3px; margin-left: .3rem; vertical-align: 1px; }
+.score-card { background: var(--g900); color: #fff; border-radius: 14px; padding: 1.8rem; position: sticky; top: 90px; }
+.score-big { font-family: var(--serif); font-size: 4rem; line-height: 1; }
+.score-big small { font-size: 1.2rem; color: #9DB8A8; }
+.score-card .sl { font-family: var(--mono); font-size: .7rem; color: var(--g300); text-transform: uppercase; letter-spacing: .1em; }
+.rank-row { display: grid; grid-template-columns: 1fr 40px; gap: .6rem; align-items: center; font-size: .84rem; margin-top: .6rem; }
+.rank-row .t { height: 8px; background: rgba(255,255,255,.1); border-radius: 4px; overflow: hidden; margin-top: .3rem; }
+.rank-row .t i { display: block; height: 100%; background: var(--g300); transition: width .4s; }
+.rank-row .v { font-family: var(--mono); text-align: right; }
+.judgment { border-top: 1px solid rgba(255,255,255,.15); margin-top: 1.4rem; padding-top: 1.2rem; }
+.judgment b { font-family: var(--serif); font-size: 1.2rem; font-weight: 500; display: block; margin-bottom: .5rem; }
+.judgment li { font-size: .86rem; color: #CFE3D6; }
+.formula { font-family: var(--mono); font-size: .72rem; color: #9DB8A8; margin-top: 1rem; line-height: 1.5; }
+
+/* decision rights */
+.dr-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.dr { border-collapse: collapse; width: 100%; min-width: 1060px; font-size: .84rem; }
+.dr th, .dr td { border-bottom: 1px solid var(--line); padding: .7rem .55rem; text-align: center; }
+.dr thead th { font-family: var(--mono); font-size: .62rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 500; vertical-align: bottom; cursor: pointer; background: var(--g50); line-height: 1.3; }
+.dr thead th:first-child, .dr td:first-child { text-align: left; min-width: 230px; cursor: default; }
+.dr thead th.hl, .dr td.hl { background: var(--g100); }
+.dr thead th:hover { color: var(--g700); }
+.dr td:first-child { font-weight: 500; }
+.dr tbody tr { cursor: pointer; }
+.dr tbody tr:hover td { background: var(--g50); }
+.dr tbody tr.sel td { background: var(--g100); }
+.dr td.esc { text-align: left; font-size: .78rem; color: var(--ink2); min-width: 220px; }
+.code { display: inline-flex; width: 26px; height: 26px; border-radius: 6px; align-items: center; justify-content: center; font-family: var(--mono); font-size: .75rem; font-weight: 600; }
+.code.D { background: var(--g700); color: #fff; }
+.code.R { background: var(--g300); color: var(--g900); }
+.code.C { background: #fff; border: 1.5px solid var(--g500); color: var(--g700); }
+.code.I { background: var(--soft); color: var(--muted); border: 1px solid var(--line); }
+.dr-legend { display: flex; flex-wrap: wrap; gap: 1.2rem; margin: 1rem 0; font-size: .84rem; align-items: center; }
+.dr-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+.dr-box { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.4rem; }
+.dr-box h4 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: .6rem; }
+.dr-box p, .dr-box li { font-size: .9rem; color: var(--ink2); }
+.principle-strip { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; margin-top: 1.5rem; }
+.principle-strip div { border-top: 2px solid var(--g500); padding-top: .8rem; font-size: .9rem; color: var(--ink2); }
+.principle-strip b { display: block; color: var(--ink); margin-bottom: .2rem; }
+
+/* lifecycle */
+.lc-ring { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: .8rem; margin-bottom: 1.5rem; position: relative; }
+.lc-stage { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.1rem; text-align: left; position: relative; transition: all .2s; }
+.lc-stage .i { font-family: var(--mono); font-size: .7rem; color: var(--g500); }
+.lc-stage .n { font-family: var(--serif); font-size: 1.4rem; display: block; color: var(--ink); }
+.lc-stage .o { font-size: .78rem; color: var(--muted); }
+.lc-stage::after { content: "\2192"; position: absolute; right: -.75rem; top: 50%; transform: translateY(-50%); color: var(--g500); font-size: 1rem; z-index: 2; background: var(--soft); }
+.lc-stage:last-child::after { content: "\21BA"; }
+.lc-stage.on { background: var(--g700); border-color: var(--g700); }
+.lc-stage.on .n, .lc-stage.on .o { color: #fff; }
+.lc-stage.on .i { color: var(--g300); }
+.lc-detail { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.8rem; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 2rem; }
+.lc-detail h4 { font-family: var(--mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: var(--g600); margin-bottom: .6rem; font-weight: 500; }
+.lc-detail p, .lc-detail li { font-size: .9rem; color: var(--ink2); }
+.lc-principles { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0 3rem; margin-top: 2rem; }
+.lc-p { display: grid; grid-template-columns: 30px 1fr; gap: .6rem; padding: .75rem 0; border-top: 1px solid var(--line); font-size: .92rem; cursor: pointer; }
+.lc-p .m { font-family: var(--mono); font-size: .72rem; color: var(--g500); padding-top: .15rem; }
+.lc-p b { font-weight: 600; }
+.lc-p .more { display: none; color: var(--muted); font-size: .86rem; margin-top: .3rem; }
+.lc-p.open .more { display: block; }
+
+/* manager embedded */
+.situ { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; align-items: center; }
+.spectrum { display: grid; grid-template-columns: repeat(11, minmax(0,1fr)); gap: .4rem; }
+.mod { border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: .8rem .6rem; font-size: .8rem; font-weight: 500; text-align: center; min-height: 86px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: .3rem; transition: all .25s; color: var(--ink2); }
+.mod small { font-family: var(--mono); font-size: .58rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.mod.rec { background: var(--g700); color: #fff; border-color: var(--g700); transform: translateY(-4px); box-shadow: 0 8px 18px rgba(20,86,61,.18); }
+.mod.rec small { color: var(--g300); }
+.mod.dim { opacity: .45; }
+.mod.sel { outline: 2px solid var(--g500); outline-offset: 2px; }
+.spec-axis { display: flex; justify-content: space-between; font-family: var(--mono); font-size: .68rem; color: var(--muted); margin-top: .6rem; text-transform: uppercase; letter-spacing: .06em; }
+.spec-axis span:nth-child(2) { flex: 1; text-align: center; border-bottom: 1px dashed var(--line); margin: 0 1rem .4rem; }
+.mod-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; }
+.mod-detail > div { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.4rem; }
+.mod-detail h4 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin-bottom: .5rem; }
+.mod-detail p { font-size: .9rem; color: var(--ink2); }
+.formal-note { background: var(--g50); border: 1px solid var(--g100); border-radius: 10px; padding: 1rem 1.2rem; font-size: .92rem; color: var(--g800); margin-top: 1.5rem; }
+
+/* team */
+.team-steps { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: .6rem; margin-bottom: 1.4rem; }
+.team-step { background: transparent; border: 1px solid rgba(255,255,255,.18); color: #E7F0EA; border-radius: 10px; padding: 1rem; text-align: left; transition: all .2s; }
+.team-step .i { font-family: var(--mono); font-size: .66rem; color: var(--g300); display: block; }
+.team-step .n { font-family: var(--serif); font-size: 1.1rem; display: block; margin-top: .2rem; }
+.team-step .au { height: 4px; background: rgba(255,255,255,.1); border-radius: 2px; margin-top: .8rem; overflow: hidden; }
+.team-step .au i { display: block; height: 100%; background: var(--g300); }
+.team-step.on { background: var(--g300); color: var(--g900); border-color: var(--g300); }
+.team-step.on .i { color: var(--g800); }
+.team-step.on .au { background: rgba(11,61,44,.15); }
+.team-step.on .au i { background: var(--g800); }
+.team-body { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.5rem; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.12); border-radius: 12px; padding: 1.8rem; }
+.team-body h4 { font-family: var(--mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: var(--g300); margin-bottom: .6rem; font-weight: 500; }
+.team-body p, .team-body li { font-size: .92rem; color: #D3E2D9; }
+.autonomy-label { font-family: var(--mono); font-size: .7rem; color: #9DB8A8; margin-bottom: .6rem; display: flex; justify-content: space-between; }
+.fb-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; margin-top: 2rem; }
+.fb { border: 1px solid rgba(255,255,255,.14); border-radius: 10px; padding: 1.1rem 1.2rem; cursor: pointer; transition: border-color .2s; }
+.fb:hover { border-color: var(--g300); }
+.fb .q { font-weight: 600; color: #fff; display: flex; justify-content: space-between; gap: 1rem; }
+.fb .q span { font-family: var(--mono); color: var(--g300); }
+.fb .a { display: none; font-size: .9rem; color: #CFE3D6; margin-top: .6rem; }
+.fb.open .a { display: block; }
+
+/* measurement */
+.levels { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: .8rem; margin-bottom: 1.4rem; }
+.lvl { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.1rem; text-align: left; transition: all .2s; position: relative; }
+.lvl .i { font-family: var(--mono); font-size: .7rem; color: var(--g500); }
+.lvl .n { font-family: var(--serif); font-size: 1.15rem; display: block; color: var(--ink); margin-top: .2rem; }
+.lvl.on { border-color: var(--g700); background: var(--g700); }
+.lvl.on .n { color: #fff; } .lvl.on .i { color: var(--g300); }
+.lvl-body { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1.8rem; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; }
+.lvl-body h4 { font-family: var(--mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; color: var(--g600); margin-bottom: .6rem; font-weight: 500; }
+.lvl-body p, .lvl-body li { font-size: .9rem; color: var(--ink2); }
+.proof { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; margin-top: 2.5rem; }
+.proof-card { border: 1px solid var(--line); border-radius: 12px; padding: 1.4rem; background: #fff; }
+.proof-card .v { font-family: var(--serif); font-size: 2.6rem; color: var(--g700); line-height: 1; }
+.proof-card .l { font-size: .9rem; color: var(--ink2); margin-top: .5rem; }
+.proof-card .c { font-family: var(--mono); font-size: .66rem; color: var(--muted); margin-top: .6rem; text-transform: uppercase; letter-spacing: .05em; }
+
+/* not change */
+.nc-quote { font-family: var(--serif); font-size: clamp(1.25rem, 2.1vw, 1.7rem); line-height: 1.4; color: var(--ink); max-width: 980px; border-left: 3px solid var(--g500); padding-left: 1.5rem; margin-bottom: 2.5rem; }
+.nc-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1rem; }
+.nc { perspective: 900px; height: 190px; cursor: pointer; }
+.nc-in { position: relative; width: 100%; height: 100%; transition: transform .6s; transform-style: preserve-3d; }
+.nc.flip .nc-in { transform: rotateY(180deg); }
+.nc-f, .nc-b { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 12px; padding: 1.2rem; display: flex; flex-direction: column; justify-content: space-between; }
+.nc-f { background: #fff; border: 1px solid var(--line); }
+.nc-f .x { font-family: var(--mono); font-size: .66rem; color: var(--rose); text-transform: uppercase; letter-spacing: .08em; }
+.nc-f p { font-weight: 600; font-size: 1rem; margin: 0; color: var(--ink); }
+.nc-f small { font-family: var(--mono); font-size: .66rem; color: var(--muted); }
+.nc-b { background: var(--g700); color: #fff; transform: rotateY(180deg); }
+.nc-b .x { font-family: var(--mono); font-size: .66rem; color: var(--g300); text-transform: uppercase; letter-spacing: .08em; }
+.nc-b p { font-size: .9rem; margin: 0; color: #E7F0EA; }
+
+/* roadmap */
+.rm-filter { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.4rem; }
+.rm { display: grid; grid-template-columns: 220px repeat(3, minmax(0,1fr)); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #fff; }
+.rm > div { padding: .75rem .9rem; border-bottom: 1px solid var(--line); font-size: .86rem; }
+.rm .h { font-family: var(--mono); font-size: .66rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); background: var(--g50); }
+.rm .th { font-weight: 600; color: var(--ink); border-right: 1px solid var(--line); }
+.rm .cell { border-right: 1px solid var(--line); color: var(--ink2); }
+.rm .cell:nth-child(4n) { border-right: none; }
+.rm .cell.act { background: var(--g50); }
+.rm .cell.act::before { content: ""; display: block; width: 100%; height: 4px; border-radius: 2px; background: var(--g500); margin-bottom: .45rem; }
+.rm .row-dim { opacity: .25; }
+
+/* glance */
+.glance { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 2.4rem; }
+.glance-head { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; border-bottom: 2px solid var(--g700); padding-bottom: 1rem; margin-bottom: 1.5rem; }
+.glance-head h2 { font-size: 2rem; }
+.glance-head .who { font-family: var(--mono); font-size: .74rem; color: var(--muted); text-align: right; }
+.glance-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1.4rem 1.8rem; }
+.glance-grid h4 { font-family: var(--mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--g700); margin-bottom: .5rem; font-weight: 500; }
+.glance-grid ul { padding-left: 1rem; }
+.glance-grid li { font-size: .84rem; color: var(--ink2); margin-bottom: .25rem; line-height: 1.45; }
+.glance-foot { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; font-family: var(--mono); font-size: .7rem; color: var(--muted); }
+
+/* closing */
+.closing { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); gap: 3rem; align-items: center; }
+.closing .lead { font-family: var(--serif); font-size: clamp(1.6rem, 2.8vw, 2.3rem); line-height: 1.3; color: #fff; }
+.closing .lead em { color: var(--g300); }
+.contact-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.14); border-radius: 14px; padding: 1.8rem; }
+.contact-card .nm { font-family: var(--serif); font-size: 1.5rem; color: #fff; }
+.contact-card .rl { font-family: var(--mono); font-size: .72rem; color: var(--g300); margin-bottom: 1.3rem; }
+.contact-card .btns { display: grid; gap: .6rem; }
+.contact-card .btn { justify-content: center; }
+.fid-footer { padding: 1.6rem 5vw; font-family: var(--mono); font-size: .72rem; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; text-transform: lowercase; width: 100%; }
+.to-top { position: fixed; right: 1.4rem; bottom: 1.4rem; width: 44px; height: 44px; border-radius: 50%; background: var(--g700); color: #fff; border: none; font-size: 1.1rem; opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s; z-index: 55; box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+.to-top.show { opacity: 1; pointer-events: auto; }
+.to-top:hover { transform: translateY(-3px); }
+
+/* responsive */
+@media (max-width: 1080px) {
+  .door-wrap { grid-template-columns: 1fr; gap: 1.2rem; }
+  .door-lines { display: none; }
+  .doors { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .spectrum { grid-template-columns: repeat(4, minmax(0,1fr)); }
+  .kpis { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .nc-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .glance-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 900px) {
+  .ml-section { padding: 4rem 5vw; }
+  .ml-hero-inner, .sec-head, .exec-grid, .phase-body, .flow-wrap, .proto, .dash-grid, .prio, .closing, .voice-card, .dr-detail, .mod-detail, .consist { grid-template-columns: minmax(0,1fr); }
+  .sec-head { gap: 1rem; }
+  .ml-hero-strip { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .obj-list { columns: 1; }
+  .flow-detail, .score-card { position: static; }
+  .lc-ring { grid-template-columns: repeat(5, minmax(120px,1fr)); overflow-x: auto; }
+  .lc-detail, .lvl-body, .team-body { grid-template-columns: minmax(0,1fr); }
+  .levels, .team-steps { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .lc-principles, .fb-grid, .principle-strip, .proof { grid-template-columns: minmax(0,1fr); }
+  .rm { grid-template-columns: 140px repeat(3, minmax(0,1fr)); font-size: .8rem; }
+  .acc-item.open .acc-body { grid-template-columns: 1fr; padding-left: 1.2rem; }
+}
+@media (max-width: 600px) {
+  .phase-tabs { grid-template-columns: minmax(0,1fr); }
+  .doors { grid-template-columns: minmax(0,1fr); }
+  .kpis { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .spectrum { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .nc-grid, .glance-grid { grid-template-columns: minmax(0,1fr); }
+  .opt-grid { grid-template-columns: minmax(0,1fr); }
+  .hbar, .stack-row { grid-template-columns: 105px 1fr 34px; font-size: .78rem; }
+  .rm { display: block; }
+  .rm > div.h { display: none; }
+  .rm .th { border-right: none; background: var(--g50); }
+  .rm .cell { border-right: none; }
+  .rm .cell:not(.act) { display: none; }
+  .fid-brand { display: none; }
+  .glance { padding: 1.4rem; }
+}
+
+/* print */
+@media print {
+  @page { margin: 0.5in; }
+  .fid-nav, .fid-progress, .to-top, .no-print, .hero-ctas, .ex-row, .nav-row, .review-row, .tabbar, .filter-row, .dash-controls select { display: none !important; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .ml-section { padding: 1.4rem 0; page-break-inside: auto; border: none; }
+  .ml-hero, .ml-section.dark { background: #fff !important; color: var(--ink) !important; }
+  .ml-hero h1, .ml-hero .hero-sub, .dark h2, .dark h3, .hero-name, .closing .lead, .contact-card .nm { color: var(--ink) !important; }
+  .hero-lede, .hero-callout, .dark p, .dark li, .team-body p, .team-body li, .consist p, .consist li, .strip-cell, .hero-stat span { color: var(--ink2) !important; }
+  .ml-hero-strip { background: #fff !important; }
+  [data-panel] { display: block !important; margin-bottom: 1rem; }
+  .theme-card .means { display: block; }
+  .acc-body { display: block !important; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body.print-glance .fid-app > *:not(#glance) { display: none !important; }
+  body.print-glance #glance { padding: 0; border: none; }
+  body.print-glance .glance { border: none; padding: 0; }
+  body.print-glance .glance-grid li { font-size: 8.5pt; }
+}
+</style>
+
+<div class="fid-app">
+<div class="fid-progress" id="fidProgress"></div>
+
+<nav class="fid-nav" aria-label="Section navigation">
+  <div class="fid-nav-inner">
+    <span class="fid-brand">First 90 Days · Learning Products</span>
+    <div class="fid-links" id="fidLinks">
+      <a href="#summary">Summary</a>
+      <a href="#heard">What I Heard</a>
+      <a href="#validate">Validate</a>
+      <a href="#plan">30-60-90</a>
+      <a href="#consulting">Consulting Model</a>
+      <a href="#anydoor">Any Door</a>
+      <a href="#prototype">AI Intake</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#prioritize">Prioritization</a>
+      <a href="#decisions">Decision Rights</a>
+      <a href="#lifecycle">Content Lifecycle</a>
+      <a href="#work">Closer to Work</a>
+      <a href="#team">Leading the Team</a>
+      <a href="#measure">Measurement</a>
+      <a href="#notchange">Not Too Quickly</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#glance">At a Glance</a>
+    </div>
+    <button class="fid-print-btn" onclick="window.print()">Print / PDF</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="ml-hero" id="top">
+  <div class="ml-hero-inner">
+    <div>
+      <div class="hero-badge"><span></span>Fidelity Brokerage Talent &amp; Learning · Post-interview plan</div>
+      <h1>How I'd approach the <em>first 90 days</em></h1>
+      <div class="hero-role">Director, Learning Products · Fidelity Brokerage Talent &amp; Learning</div>
+      <p class="hero-sub">Listen first. Build consistency. Strengthen consulting. Scale what works.</p>
+      <p class="hero-lede">A small learning team scales when every request gets the same quality of thinking, no matter where it enters. That takes consistent discovery, shared decision logic, and the discipline to choose coaching, process, technology, or manager reinforcement when training is not what the problem needs. Brokerage has already chosen to focus on the work with the greatest impact. The opportunity now is to make that judgment explicit and repeatable before request volume grows.</p>
+      <div class="hero-callout">Operating concept: any door, one consistent consulting experience. Built from conversations with Rachel and Jeff. Every element here is a starting hypothesis to validate with the team.</div>
+      <div class="hero-ctas">
+        <a class="btn btn-solid" href="#plan">See the 90-day plan</a>
+        <a class="btn btn-ghost" href="#prototype">Try the AI intake concept</a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <!-- Headshot: replace this div with <img class="hero-photo" src="data:image/jpeg;base64,..." alt="Shika Mahdavi, PhD"> -->
+      <div class="hero-photo" role="img" aria-label="Shika Mahdavi, PhD">SM</div>
+      <div class="hero-name">Shika Mahdavi, PhD</div>
+      <div class="hero-title-mono">Talent Development &amp; Performance Strategy</div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>4</b><span>Direct reports, plus cross-functional project teams</span></div>
+        <div class="hero-stat"><b>1.4M+</b><span>Annual transactions in a regulated donor-advised fund business</span></div>
+        <div class="hero-stat"><b>1000s</b><span>Frontline call-center and back-office employees reached by an AI knowledge platform I led deployment of</span></div>
+        <div class="hero-stat"><b>6</b><span>Partner functions: operations, technology, risk, compliance, sales, HR</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="ml-hero-strip">
+    <div class="strip-cell"><b>Charles Schwab / Schwab Charitable</b>Talent Development Strategy &amp; OD people leader</div>
+    <div class="strip-cell"><b>Structured intake &amp; governance</b>Introduced where leaders lacked shared priorities</div>
+    <div class="strip-cell"><b>Performance consulting</b>Training, process, technology, coaching, or a mix</div>
+    <div class="strip-cell"><b>Academies built</b>Business Development University, Charitable Consulting Academy</div>
+  </div>
+</header>
+
+<!-- EXECUTIVE SUMMARY -->
+<section class="ml-section reveal" id="summary">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Executive summary</span><h2>Make good judgment <em>repeatable</em> before volume arrives</h2></div>
+      <p>The team is strong, focused, and early in a new model. My role would be to make its decision logic visible, help skilled practitioners consult with more confidence, and build the conditions for learning to scale without adding people or static content.</p>
+    </div>
+    <div class="exec-grid">
+      <div class="exec-points">
+        <div class="exec-point"><div><h3>Consistency over a single entry point</h3><p>Requests can come from Rachel, the team, Line HR, business leaders, managers, or Enterprise Learning. Whoever receives one uses the same discovery questions, decision guardrails, and prioritization logic.</p></div></div>
+        <div class="exec-point"><div><h3>Consulting before content</h3><p>Every request is treated as a business problem first. The team decides whether the answer is learning, coaching, process, technology, manager reinforcement, performance support, or a combination. Training is one option, not the default.</p></div></div>
+        <div class="exec-point"><div><h3>Lead the people, not only the process</h3><p>Build on each person's craft expertise. Model discovery on real requests, review decisions together, and widen autonomy within clear guardrails.</p></div></div>
+        <div class="exec-point"><div><h3>Scale through the flow of work</h3><p>Smaller modular assets, performance support, manager-owned reinforcement, and explicit content ownership reduce maintenance and keep learning current.</p></div></div>
+        <div class="exec-point"><div><h3>Pilot, measure, then scale</h3><p>Test the model on one real request by Day 90. Measure time to root cause, handoffs, stakeholder experience, and decision consistency before broader rollout.</p></div></div>
+      </div>
+      <div>
+        <span class="kicker">Leadership behaviors, in practice</span>
+        <table class="behavior-table">
+          <thead><tr><th>Behavior</th><th>What it looks like in this model</th><th>Where</th></tr></thead>
+          <tbody>
+            <tr><td>Customer obsessed</td><td>Start with the business and employee problem</td><td><a href="#consulting">Consulting model</a></td></tr>
+            <tr><td>Tell it like it is</td><td>Challenge weak assumptions with evidence</td><td><a href="#prototype">AI intake</a></td></tr>
+            <tr><td>Empower others</td><td>Clear decision guardrails for each team member</td><td><a href="#decisions">Decision rights</a></td></tr>
+            <tr><td>Own the outcome</td><td>Measure business and performance results</td><td><a href="#measure">Measurement</a></td></tr>
+            <tr><td>Think across Fidelity</td><td>Partner with Line HR, leaders, Enterprise Learning, managers, technology</td><td><a href="#anydoor">Any door</a></td></tr>
+            <tr><td>Take risks thoughtfully</td><td>Pilot before scaling</td><td><a href="#plan">Days 61-90</a></td></tr>
+            <tr><td>Coach others</td><td>Help practitioners become stronger consultants</td><td><a href="#team">Leading the team</a></td></tr>
+            <tr><td>Stay curious</td><td>Ask before assuming</td><td><a href="#validate">Validate</a></td></tr>
+            <tr><td>Stay agile</td><td>Learn, test, refine</td><td><a href="#lifecycle">Lifecycle</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT I HEARD -->
+<section class="ml-section alt reveal" id="heard">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Executive diagnostic · 01</span><h2>What I <em>heard</em></h2></div>
+      <p>Drawn only from my conversations with Rachel and Jeff. Select a theme to see what I take it to mean for the role.</p>
+    </div>
+    <div data-tabs>
+      <div class="tabbar">
+        <button data-tab="rachel" class="on">Rachel</button>
+        <button data-tab="jeff">Jeff</button>
+        <button data-tab="converge">Where they converge</button>
+      </div>
+      <div data-panel="rachel" class="on">
+        <div class="voice-card">
+          <div>
+            <h3>A strong team that needs a different way of working</h3>
+            <div class="quote">People can enter through any door. The experience once they enter should be consistent.</div>
+            <p style="color:var(--muted);font-size:.9rem;margin:0">My paraphrase of Rachel's point on intake.</p>
+          </div>
+          <ul>
+            <li>Small team, strong in traditional learning craft: an implementation specialist, a learning experience designer, and a learning experience architect.</li>
+            <li>Move away from being order takers. Get to root cause faster and reduce unnecessary handoffs.</li>
+            <li>Decide whether the real answer is training, coaching, process, technology, or something else.</li>
+            <li>Avoid one person saying yes to everything while another says no to similar requests.</li>
+            <li>Focus on the highest-impact priorities: AI, product management, Fidelity Digital Assets, the digital organization, and UX / user research adjacency.</li>
+            <li>Still early in the model, not yet overwhelmed with requests. The right time to build the way of working.</li>
+            <li>Interested in how AI might make intake faster and more structured.</li>
+            <li>Needs someone who leads people, not only someone who builds a process.</li>
+          </ul>
+        </div>
+      </div>
+      <div data-panel="jeff">
+        <div class="voice-card">
+          <div>
+            <h3>The model for learning is still being figured out</h3>
+            <div class="quote">Common fundamentals, without one rigid model for every business.</div>
+            <p style="color:var(--muted);font-size:.9rem;margin:0">My paraphrase of Jeff's view across Fidelity.</p>
+          </div>
+          <ul>
+            <li>Scale learning and move away from facilitator-led training for everything.</li>
+            <li>Embed learning in the flow of work and in manager practices.</li>
+            <li>Design for how employees consume information today. Reduce static content that goes stale quickly.</li>
+            <li>Leaders often learned in traditional ways and may expect workshops or modules.</li>
+            <li>Brokerage is younger, built its talent and learning infrastructure from the ground up, can move faster, and uses fewer learning professionals.</li>
+            <li>More emphasis on consulting with leaders and helping managers own part of the experience.</li>
+            <li>Rachel's work lands because it is practical, makes sense to business leaders, and connects to what the business is trying to do.</li>
+          </ul>
+        </div>
+      </div>
+      <div data-panel="converge">
+        <div class="voice-card">
+          <div>
+            <h3>The same direction from two vantage points</h3>
+            <div class="quote">Consult with leaders. Solve the right problem. Let it scale through the work.</div>
+          </div>
+          <ul>
+            <li><b>Consulting over producing.</b> Rachel wants the team to stop taking orders. Jeff wants learning to consult with leaders instead of producing content.</li>
+            <li><b>Scale with a small team.</b> Rachel's team is three people. Jeff noted Brokerage uses fewer learning professionals by design.</li>
+            <li><b>Practical, business-anchored work.</b> Jeff credits Rachel's work for this. The model has to protect it.</li>
+            <li><b>Flexibility within shared principles.</b> Rachel rejects a single front door. Jeff rejects one rigid learning model. Both point to common standards with room to adapt.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-row" id="themeFilter">
+      <span class="fl">Diagnostic themes</span>
+      <button class="chip-btn on" data-f="all">All</button>
+      <button class="chip-btn" data-f="rachel">From Rachel</button>
+      <button class="chip-btn" data-f="jeff">From Jeff</button>
+      <button class="chip-btn" data-f="both">Both</button>
+    </div>
+    <div class="theme-grid" id="themeGrid"></div>
+  </div>
+</section>
+
+<!-- VALIDATE -->
+<section class="ml-section reveal" id="validate">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Executive diagnostic · 02</span><h2>What I would validate <em>before changing anything</em></h2></div>
+      <p>Interviews give direction, not data. These are the questions I'd answer in the first 30 days, with the team, before proposing changes. Check them off as a working list.</p>
+    </div>
+    <span class="bh">Stay curious: ask before assuming</span>
+    <div class="val-top">
+      <div class="val-meter"><small id="valCount">0 of 12 validated</small><div class="val-meter-bar"><i id="valBar"></i></div></div>
+      <button class="pbtn ghost no-print" id="valExpand">Expand all</button>
+    </div>
+    <div class="acc" id="valList"></div>
+  </div>
+</section>
+
+<!-- 30-60-90 -->
+<section class="ml-section alt reveal" id="plan">
+  <div class="ml-section-inner">
+    <div class="plan-head">
+      <span class="kicker">The plan</span>
+      <h2>How I'd Approach the First 90 Days</h2>
+      <div class="role">Director, Learning Products · Fidelity Brokerage Talent &amp; Learning</div>
+      <div class="sub">Listen first. Build consistency. Strengthen consulting. Scale what works.</div>
+    </div>
+    <div data-tabs>
+      <div class="phase-tabs">
+        <button class="phase-tab on" data-tab="p1"><span class="d">DAYS 1-30</span><span class="n">Observe, Listen, Map</span><div class="bar"><i></i></div></button>
+        <button class="phase-tab" data-tab="p2"><span class="d">DAYS 31-60</span><span class="n">Codify, Prioritize, Empower</span><div class="bar"><i></i></div></button>
+        <button class="phase-tab" data-tab="p3"><span class="d">DAYS 61-90</span><span class="n">Pilot, Measure, Refine</span><div class="bar"><i></i></div></button>
+      </div>
+      <div data-panel="p1" class="on">
+        <div class="phase-body">
+          <div>
+            <h3>Observe, Listen, Map</h3>
+            <p class="intent">Understand how work actually moves today, what is already working, and where each person's strengths are. No changes until the current state is visible to everyone.</p>
+            <span class="bh">Stay curious</span><span class="bh">Think and work across Fidelity</span><span class="bh">Coach others</span>
+            <h4>Objectives</h4>
+            <ul class="obj-list">
+              <li>Meet Rachel and the learning team</li>
+              <li>Meet Line HR partners</li>
+              <li>Understand Brokerage business priorities</li>
+              <li>Shadow real learning requests from entry through resolution</li>
+              <li>Observe how each team member handles intake</li>
+              <li>Identify differences in decision-making</li>
+              <li>Map current request channels</li>
+              <li>Map handoffs</li>
+              <li>Understand where work slows down</li>
+              <li>Learn which content goes out of date fastest</li>
+              <li>Review the existing portfolio</li>
+              <li>Understand what Enterprise Learning already provides</li>
+              <li>Understand manager-owned learning practices</li>
+              <li>Review available performance and learner data</li>
+              <li>Identify what is already working well</li>
+              <li>Learn each team member's strengths</li>
+              <li>Identify coaching opportunities without devaluing existing expertise</li>
+            </ul>
+          </div>
+          <div class="deliv">
+            <span class="kicker">Deliverables</span>
+            <ol>
+              <li>Current-state request journey</li>
+              <li>Stakeholder map</li>
+              <li>Portfolio map</li>
+              <li>Friction map</li>
+              <li>Content lifecycle map</li>
+              <li>Current decision-rights map</li>
+              <li>Team capability strengths map</li>
+              <li>Questions requiring validation</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div data-panel="p2">
+        <div class="phase-body">
+          <div>
+            <h3>Codify, Prioritize, Empower</h3>
+            <p class="intent">Co-create the lightweight model with the team, so it reflects how they work and they own it. Make the decision logic explicit enough that two people would reach the same answer.</p>
+            <span class="bh">Empower others</span><span class="bh">Tell it like it is</span><span class="bh">Customer obsessed</span>
+            <h4>Objectives</h4>
+            <ul class="obj-list">
+              <li>Co-create a lightweight consulting framework</li>
+              <li>Define a consistent discovery process</li>
+              <li>Define the common questions every team member asks</li>
+              <li>Establish decision guardrails</li>
+              <li>Clarify what warrants learning</li>
+              <li>Clarify what goes to coaching, process, technology, or manager reinforcement</li>
+              <li>Define portfolio prioritization criteria</li>
+              <li>Make trade-offs transparent</li>
+              <li>Clarify team decision rights</li>
+              <li>Clarify where escalation is actually needed</li>
+              <li>Build reusable learning patterns</li>
+              <li>Define what is standardized and what stays flexible by business</li>
+              <li>Introduce a content lifecycle mindset</li>
+              <li>Identify one opportunity for a pilot</li>
+            </ul>
+          </div>
+          <div class="deliv">
+            <span class="kicker">Deliverables</span>
+            <ol>
+              <li>Learning consulting framework</li>
+              <li>Modern intake model</li>
+              <li>Prioritization rubric</li>
+              <li>Decision-rights framework</li>
+              <li>Content lifecycle principles</li>
+              <li>Learning product principles</li>
+              <li>Pilot recommendation</li>
+              <li>Initial success measures</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div data-panel="p3">
+        <div class="phase-body">
+          <div>
+            <h3>Pilot, Measure, Refine</h3>
+            <p class="intent">Run one real request through the new model end to end. Learn from it with the team and stakeholders, and refine before anything scales.</p>
+            <span class="bh">Take risks thoughtfully</span><span class="bh">Own the outcome</span><span class="bh">Stay agile</span>
+            <h4>Objectives</h4>
+            <ul class="obj-list">
+              <li>Use one real request to test the model</li>
+              <li>Run it through the new intake process</li>
+              <li>Diagnose the actual business problem</li>
+              <li>Determine the right intervention</li>
+              <li>Reduce unnecessary handoffs</li>
+              <li>Give the team member closest to the work decision authority within guardrails</li>
+              <li>Deliver or redirect the solution</li>
+              <li>Gather stakeholder feedback</li>
+              <li>Measure the experience</li>
+              <li>Measure the intervention</li>
+              <li>Identify what should scale</li>
+              <li>Refine the model before broader rollout</li>
+            </ul>
+          </div>
+          <div class="deliv">
+            <span class="kicker">Deliverables</span>
+            <ol>
+              <li>Pilot results</li>
+              <li>Time-to-diagnosis comparison</li>
+              <li>Handoff reduction</li>
+              <li>Stakeholder experience feedback</li>
+              <li>Decision consistency review</li>
+              <li>Content maintenance implications</li>
+              <li>Refined intake model</li>
+              <li>Refined decision-rights model</li>
+              <li>6-12 month roadmap</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTING MODEL -->
+<section class="ml-section reveal" id="consulting">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Learning consulting model</span><h2>From request to <em>root cause</em> to the right intervention</h2></div>
+      <p>One shared path every team member follows, regardless of who asked. Select a step to see the questions it forces and the mistake it prevents.</p>
+    </div>
+    <span class="bh">Customer obsessed: start with the business and employee problem</span>
+    <div class="flow-wrap">
+      <div class="flow" id="flow"></div>
+      <div class="flow-detail" id="flowDetail"></div>
+    </div>
+    <div class="not-default"><b>Training is not the default answer.</b><span>It is one of seven options, chosen only when the root cause is a knowledge or skill gap that other interventions will not close.</span></div>
+  </div>
+</section>
+
+<!-- ANY DOOR -->
+<section class="ml-section dark reveal" id="anydoor">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Modern intake model</span><h2>Any Door. <em>One Consistent Experience.</em></h2></div>
+      <p>No forced front door. Requests arrive where relationships already exist. What stays constant is what happens next. Select an entry point to trace it.</p>
+    </div>
+    <div class="door-wrap">
+      <div class="doors" id="doors"></div>
+      <div class="door-lines"><svg viewBox="0 0 60 340" preserveAspectRatio="none" id="doorSvg"></svg></div>
+      <div class="engine">
+        <div class="engine-title">Shared consulting logic</div>
+        <div class="engine-step" data-es="0">Same discovery questions<small>8 core questions</small></div>
+        <div class="engine-step" data-es="1">Same root-cause lens<small>Learning or not?</small></div>
+        <div class="engine-step" data-es="2">Same prioritization logic<small>Transparent rubric</small></div>
+        <div class="engine-step" data-es="3">Same decision guardrails<small>Who decides, who escalates</small></div>
+        <div class="engine-step" data-es="4">Consistent stakeholder experience<small>Same follow-through</small></div>
+      </div>
+      <div class="door-lines"><svg viewBox="0 0 60 340" preserveAspectRatio="none"><path d="M0 170 L60 170" class="on"/></svg></div>
+      <div class="outcome-box" id="doorOutcome"></div>
+    </div>
+    <div class="consist">
+      <div class="before">
+        <h4>Without shared logic</h4>
+        <ul>
+          <li>One team member says yes to a course request. Another says no to a similar one.</li>
+          <li>The requester's experience depends on who they happened to call.</li>
+          <li>Requests get passed along before anyone defines the problem.</li>
+          <li>Priority goes to whoever asks loudest or first.</li>
+        </ul>
+      </div>
+      <div class="after">
+        <h4>With shared logic</h4>
+        <ul>
+          <li>Whoever receives the request runs the same discovery and owns it within guardrails.</li>
+          <li>Similar requests get similar answers, with reasons the requester can see.</li>
+          <li>Fewer handoffs, because the first person can diagnose.</li>
+          <li>Rachel can trust the standard without approving every decision.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI PROTOTYPE -->
+<section class="ml-section alt reveal" id="prototype">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Concept prototype · 01</span><h2>AI Learning Intake &amp; <em>Performance Consultant</em></h2></div>
+      <p>A working concept for Rachel's question about AI in intake. It speeds up the front end of discovery by asking structured questions, surfacing hypotheses, and flagging uncertainty. People still make every decision.</p>
+    </div>
+    <div class="notice"><span class="ic">i</span><div><b>Concept Demonstration</b>This prototype uses fictional data and simulated AI responses. It is not a Fidelity production system. Responses come from deterministic rules running in your browser. No data leaves this page.</div></div>
+
+    <div class="proto">
+      <div class="panel">
+        <div class="panel-head"><span class="pt">Intake conversation</span><div class="steps-dots" id="dots"></div></div>
+        <div class="panel-body">
+          <div class="qstep on" data-step="0">
+            <div class="qnum">START</div>
+            <div class="qtitle">What is being requested?</div>
+            <div class="qwhy">Describe the request in the requester's own words. Solutions named here are treated as hypotheses.</div>
+            <div class="ex-row">
+              <button class="ex-btn" data-ex="1">Example 1: "We need training because managers are not giving employees feedback consistently."</button>
+              <button class="ex-btn" data-ex="2">Example 2: "We need a course on a new tool."</button>
+            </div>
+            <div class="fld"><label for="reqText">Request</label><textarea id="reqText" placeholder="e.g., We need a workshop on..."></textarea></div>
+            <div class="fld"><label for="reqDoor">Entry point</label>
+              <select id="reqDoor">
+                <option>Business leader</option><option>Manager</option><option>HR partner</option><option>Learning team member</option><option>Rachel</option><option>Enterprise Learning partner</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="qstep" data-step="1">
+            <div class="qnum">QUESTION 1 OF 8</div>
+            <div class="qtitle">What business outcome is being affected?</div>
+            <div class="qwhy">Anchors the conversation in the business, not the deliverable.</div>
+            <div class="fld"><select id="q1">
+              <option value="">Select an outcome</option>
+              <option>Quality or consistency of work</option>
+              <option>Productivity or cycle time</option>
+              <option>Customer or client experience</option>
+              <option>Risk or compliance</option>
+              <option>Employee readiness</option>
+              <option>Adoption of a new tool or process</option>
+              <option>Not yet defined</option>
+            </select></div>
+          </div>
+
+          <div class="qstep" data-step="2">
+            <div class="qnum">QUESTION 2 OF 8</div>
+            <div class="qtitle">What behavior needs to change?</div>
+            <div class="qwhy">Describe what people should be able to do differently, in observable terms.</div>
+            <div class="fld"><textarea id="q2" placeholder="e.g., Managers give specific feedback within a week of observed work"></textarea></div>
+          </div>
+
+          <div class="qstep" data-step="3">
+            <div class="qnum">QUESTION 3 OF 8</div>
+            <div class="qtitle">Who is affected?</div>
+            <div class="qwhy">Scope shapes the intervention and who owns reinforcement.</div>
+            <div class="opt-grid" data-radio="q3">
+              <label class="opt"><input type="radio" name="q3" value="Managers">Managers</label>
+              <label class="opt"><input type="radio" name="q3" value="Individual contributors">Individual contributors</label>
+              <label class="opt"><input type="radio" name="q3" value="New hires">New hires</label>
+              <label class="opt"><input type="radio" name="q3" value="A specific team">A specific team</label>
+              <label class="opt"><input type="radio" name="q3" value="Multiple groups">Multiple groups</label>
+            </div>
+          </div>
+
+          <div class="qstep" data-step="4">
+            <div class="qnum">QUESTION 4 OF 8</div>
+            <div class="qtitle">What evidence suggests this is a learning issue?</div>
+            <div class="qwhy">Evidence quality drives the confidence rating.</div>
+            <div class="opt-grid" data-radio="q4">
+              <label class="opt"><input type="radio" name="q4" value="Observed performance data">Observed performance data</label>
+              <label class="opt"><input type="radio" name="q4" value="Audit or quality findings">Audit or quality findings</label>
+              <label class="opt"><input type="radio" name="q4" value="Employee feedback">Employee feedback</label>
+              <label class="opt"><input type="radio" name="q4" value="Stakeholder perception">Stakeholder perception</label>
+              <label class="opt"><input type="radio" name="q4" value="No evidence yet">No evidence yet</label>
+            </div>
+          </div>
+
+          <div class="qstep" data-step="5">
+            <div class="qnum">QUESTION 5 OF 8</div>
+            <div class="qtitle">What happens today when the behavior is not performed correctly?</div>
+            <div class="qwhy">The consequence shows the cost of the gap.</div>
+            <div class="fld"><select id="q5">
+              <option value="">Select the most visible consequence</option>
+              <option>Errors or rework</option>
+              <option>Inconsistent employee experience</option>
+              <option>Delays or slower cycle time</option>
+              <option>Escalations or complaints</option>
+              <option>Workarounds outside the intended process</option>
+              <option>Unknown</option>
+            </select></div>
+          </div>
+
+          <div class="qstep" data-step="6">
+            <div class="qnum">QUESTION 6 OF 8</div>
+            <div class="qtitle">What is the barrier?</div>
+            <div class="qwhy">Select all that apply. This is the most important question in the sequence.</div>
+            <div class="opt-grid" id="q6">
+              <label class="opt"><input type="checkbox" value="knowledge">Knowledge</label>
+              <label class="opt"><input type="checkbox" value="skill">Skill</label>
+              <label class="opt"><input type="checkbox" value="motivation">Motivation</label>
+              <label class="opt"><input type="checkbox" value="process">Process</label>
+              <label class="opt"><input type="checkbox" value="technology">Technology</label>
+              <label class="opt"><input type="checkbox" value="expectations">Expectations</label>
+              <label class="opt"><input type="checkbox" value="manager">Manager support</label>
+              <label class="opt"><input type="checkbox" value="ownership">Unclear ownership</label>
+            </div>
+          </div>
+
+          <div class="qstep" data-step="7">
+            <div class="qnum">QUESTION 7 OF 8</div>
+            <div class="qtitle">Is this issue widespread or localized?</div>
+            <div class="qwhy">Determines whether to build something reusable or solve it locally.</div>
+            <div class="opt-grid" data-radio="q7">
+              <label class="opt"><input type="radio" name="q7" value="Widespread">Widespread</label>
+              <label class="opt"><input type="radio" name="q7" value="Localized">Localized to a few teams</label>
+              <label class="opt"><input type="radio" name="q7" value="Unknown">Unknown</label>
+            </div>
+          </div>
+
+          <div class="qstep" data-step="8">
+            <div class="qnum">QUESTION 8 OF 8</div>
+            <div class="qtitle">What would success look like?</div>
+            <div class="qwhy">Define the measure before choosing the solution.</div>
+            <div class="fld"><label for="q8t">Timeframe</label><select id="q8t"><option>30 days</option><option>60 days</option><option selected>90 days</option></select></div>
+            <div class="fld"><label for="q8">Observable success</label><textarea id="q8" placeholder="e.g., Most employees report a specific feedback conversation each month"></textarea></div>
+          </div>
+
+          <div class="nav-row">
+            <button class="pbtn ghost" id="pReset">Reset</button>
+            <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+              <button class="pbtn sec" id="pBack" disabled>Back</button>
+              <button class="pbtn sec" id="pJump" style="display:none">Jump to diagnosis</button>
+              <button class="pbtn" id="pNext">Start intake</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="outPanel">
+        <div class="panel-head"><span class="pt">Simulated AI response</span><span class="label-demo">Fictional</span></div>
+        <div class="panel-body">
+          <div class="out-empty" id="outEmpty">
+            <div class="big">Diagnosis appears here</div>
+            <p>Enter a request and answer the eight questions, or load an example. The concept will return hypotheses, options, a confidence rating, and a next step for a person to validate.</p>
+          </div>
+          <div class="thinking" id="outThinking"><div class="dots"><i></i><i></i><i></i></div><p style="margin-top:1rem">Comparing answers against the consulting model...</p></div>
+          <div class="dx" id="outDx"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section class="ml-section reveal" id="dashboard">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Concept prototype · 02</span><h2>AI intake <em>dashboard</em></h2></div>
+      <p>If intake is structured, the patterns become visible: recurring business problems, repeated capability gaps, where managers need support, process friction, and where team capacity goes.</p>
+    </div>
+    <div class="dash-controls">
+      <span class="label-demo">Illustrative demo data only</span>
+      <label style="font-size:.88rem;display:flex;gap:.6rem;align-items:center">Entry point
+        <select id="dashFilter">
+          <option value="all">All entry points</option>
+          <option value="rachel">Rachel</option>
+          <option value="team">Learning team member</option>
+          <option value="hr">HR partner</option>
+          <option value="leader">Business leader</option>
+          <option value="manager">Manager</option>
+          <option value="ent">Enterprise Learning partner</option>
+        </select>
+      </label>
+    </div>
+    <div class="kpis" id="kpis"></div>
+    <div class="dash-grid">
+      <div class="chart-card">
+        <h4>What requests turned out to be</h4>
+        <div class="cs">Diagnosed primary intervention type (fictional)</div>
+        <div id="mixChart"></div>
+      </div>
+      <div class="chart-card">
+        <h4>Asked for training vs. diagnosed as learning</h4>
+        <div class="cs">Where requests are repeatedly misclassified as training (fictional)</div>
+        <div class="compare" id="compare"></div>
+        <div style="margin-top:1.2rem" id="doorStack"></div>
+      </div>
+      <div class="chart-card">
+        <h4>Top recurring capability themes</h4>
+        <div class="cs">Grouped from intake answers, with the signal each suggests (fictional)</div>
+        <div class="theme-list" id="themeList"></div>
+      </div>
+      <div class="chart-card">
+        <h4>What this would tell Rachel</h4>
+        <div class="cs">Reads generated from the demo data for the selected view</div>
+        <div class="insights" id="insights"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIORITIZATION -->
+<section class="ml-section alt reveal" id="prioritize">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Product prioritization model</span><h2>Transparent scoring, <em>human judgment</em></h2></div>
+      <p>Twelve weighted criteria make trade-offs visible and comparable. Adjust ratings and weights to see how the score moves. The score informs the conversation. It does not make the decision.</p>
+    </div>
+    <span class="bh">Own the outcome</span><span class="bh">Tell it like it is</span>
+    <div class="prio" style="margin-top:1rem">
+      <div class="panel">
+        <div class="panel-head"><span class="pt">Score a request</span><span class="label-demo">Fictional requests</span></div>
+        <div class="panel-body">
+          <div class="req-tabs tabbar" id="reqTabs"></div>
+          <div style="overflow-x:auto">
+            <table class="crit-table">
+              <thead><tr><th>Criterion</th><th style="width:38%">Rating (1-5)</th><th></th><th>Weight</th><th style="text-align:right">Points</th></tr></thead>
+              <tbody id="critBody"></tbody>
+            </table>
+          </div>
+          <p style="font-size:.8rem;color:var(--muted);margin:1rem 0 0"><span class="inv">inverse</span> A higher rating lowers priority. High maintenance burden, high effort, heavy technical dependencies, or a strong existing solution all argue against building something new.</p>
+        </div>
+      </div>
+      <div class="score-card">
+        <div class="sl">Weighted score</div>
+        <div class="score-big"><span id="scoreVal">0</span><small> / 100</small></div>
+        <div id="scoreBand" style="font-size:.9rem;color:#CFE3D6;margin-top:.4rem"></div>
+        <div style="margin-top:1.3rem" class="sl">Portfolio comparison</div>
+        <div id="rankList"></div>
+        <div class="formula">score = Σ weight × normalized rating ÷ Σ weights<br>normalized = (rating − 1) ÷ 4, or (5 − rating) ÷ 4 for inverse criteria</div>
+        <div class="judgment">
+          <b>Portfolio judgment remains human.</b>
+          <ul>
+            <li>Does the score match what we know from the business?</li>
+            <li>What would change our mind?</li>
+            <li>Is there a reason to pilot something that scores lower?</li>
+            <li>Which trade-offs need Rachel or Line HR in the conversation?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DECISION RIGHTS -->
+<section class="ml-section reveal" id="decisions">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Decision rights</span><h2>Decision Rights <em>Without Bottlenecks</em></h2></div>
+      <p>Push decisions to the person closest to the work, inside clear guardrails, and escalate by exception. Select a role to see what it owns, or a decision to see when it escalates.</p>
+    </div>
+    <span class="label-hyp">Working hypothesis to validate with Rachel and team</span>
+    <div class="dr-legend">
+      <span><span class="code D">D</span> Decides</span>
+      <span><span class="code R">R</span> Recommends</span>
+      <span><span class="code C">C</span> Consulted</span>
+      <span><span class="code I">I</span> Informed</span>
+    </div>
+    <div class="dr-scroll"><table class="dr" id="drTable"></table></div>
+    <div class="dr-detail">
+      <div class="dr-box" id="drRole"></div>
+      <div class="dr-box" id="drDecision"></div>
+    </div>
+    <div class="principle-strip">
+      <div><b>The Director does not approve every design decision.</b>Designers recommend and decide modality within guardrails. I review patterns, not every artifact.</div>
+      <div><b>The business leader owns the business outcome.</b>Learning owns the quality of the diagnosis and the solution. Line HR helps validate business priority.</div>
+      <div><b>Managers own reinforcement in the flow of work.</b>Enterprise Learning provides shared standards and enterprise resources. Technology partners own platform changes.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT LIFECYCLE -->
+<section class="ml-section alt reveal" id="lifecycle">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Content lifecycle model</span><h2>Build less. <em>Keep it current.</em></h2></div>
+      <p>Jeff's concern is that static content goes stale quickly. A small team cannot maintain a large library, so every asset needs an owner, a review trigger, and a retirement path from the day it is created.</p>
+    </div>
+    <span class="bh">Stay agile: learn, test, refine</span>
+    <div class="lc-ring" id="lcRing" style="margin-top:1rem"></div>
+    <div class="lc-detail" id="lcDetail"></div>
+    <div class="lc-principles" id="lcPrinciples"></div>
+  </div>
+</section>
+
+<!-- MANAGER EMBEDDED -->
+<section class="ml-section reveal" id="work">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Manager-embedded learning</span><h2>Move Learning <em>Closer to the Work.</em></h2></div>
+      <p>The answer is a mix along a spectrum, from in-the-moment support to formal training. Pick a situation to see the mix I would start from. Select any option to see who owns it.</p>
+    </div>
+    <div class="situ" id="situ"><span class="fl" style="font-family:var(--mono);font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-right:.5rem">Situation</span></div>
+    <div class="spectrum" id="spectrum"></div>
+    <div class="spec-axis"><span>In the flow of work</span><span></span><span>Structured / formal</span></div>
+    <div class="mod-detail">
+      <div id="situWhy"></div>
+      <div id="modWhy"></div>
+    </div>
+    <div class="formal-note"><b>Formal training remains appropriate when it is needed.</b> New foundational capability, high-stakes practice, and shared standards across a population can justify structured programs. The goal is to stop defaulting to them, and to stop turning everything into microlearning.</div>
+  </div>
+</section>
+
+<!-- TEAM LEADERSHIP -->
+<section class="ml-section dark reveal" id="team">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">People leadership</span><h2>Leading the Team <em>Through the Shift</em></h2></div>
+      <p>The team's craft is an asset. The shift is adding consulting and product thinking on top of it, so it gets used on the right problems. Autonomy grows as shared judgment grows.</p>
+    </div>
+    <div class="autonomy-label"><span>More modeling and joint review</span><span>More autonomy within guardrails</span></div>
+    <div class="team-steps" id="teamSteps"></div>
+    <div class="team-body" id="teamBody"></div>
+    <div class="fb-grid" id="fbGrid"></div>
+  </div>
+</section>
+
+<!-- MEASUREMENT -->
+<section class="ml-section reveal" id="measure">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Measurement framework</span><h2>Four levels, from consulting quality to <em>business performance</em></h2></div>
+      <p>Specific KPIs would be set with Rachel, Line HR, and business leaders, based on the data that exists. These levels set the structure. Select one to see the measures.</p>
+    </div>
+    <div class="levels" id="levels"></div>
+    <div class="lvl-body" id="lvlBody"></div>
+    <div style="margin-top:3rem"><span class="kicker">Where I've measured this before · Charles Schwab / Schwab Charitable</span></div>
+    <div class="proof">
+      <div class="proof-card"><div class="v"><span class="counter" data-to="25">0</span>%</div><div class="l">Improvement in time to proficiency after rebuilding frontline onboarding around readiness milestones, coaching, quality standards, scorecards, and manager accountability.</div><div class="c">Level 4 · Business performance</div></div>
+      <div class="proof-card"><div class="v"><span class="counter" data-to="15">0</span>-<span class="counter" data-to="20">0</span>%</div><div class="l">Improvement in frontline operational performance from a system combining AI-enabled knowledge support, coaching, manager accountability, and analytics.</div><div class="c">Level 4 · Business performance</div></div>
+      <div class="proof-card"><div class="v" style="font-size:1.6rem;line-height:1.25">Completions → performance</div><div class="l">Enterprise scorecards, executive dashboards, and predictive analytics on readiness, onboarding, operational quality, and adoption shifted leadership conversations toward frontline results.</div><div class="c">Levels 2-4 · Readiness to outcomes</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NOT CHANGE -->
+<section class="ml-section alt reveal" id="notchange">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Restraint</span><h2>What I would <em>not change too quickly</em></h2></div>
+      <p>Select a card to see what I would do instead.</p>
+    </div>
+    <div class="nc-quote">The team is already focused on high-impact business priorities. My first objective would not be to redesign that strategy. It would be to understand what is working, make the decision model more explicit, strengthen consulting capability, and remove friction that prevents the team from scaling.</div>
+    <div class="nc-grid" id="ncGrid"></div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section class="ml-section reveal" id="roadmap">
+  <div class="ml-section-inner">
+    <div class="sec-head">
+      <div><span class="kicker">Beyond Day 90</span><h2>6-12 month <em>directional roadmap</em></h2></div>
+      <p>Themes that would follow if the pilot holds up. Sequencing would change based on what the first 90 days show. Filter by horizon to focus the view.</p>
+    </div>
+    <span class="label-hyp">Directional roadmap subject to validation</span>
+    <div class="rm-filter tabbar" id="rmFilter" style="margin-top:1rem">
+      <button class="on" data-h="all">All horizons</button>
+      <button data-h="0">Months 4-6</button>
+      <button data-h="1">Months 7-9</button>
+      <button data-h="2">Months 10-12</button>
+    </div>
+    <div class="rm" id="rm"></div>
+  </div>
+</section>
+
+<!-- GLANCE -->
+<section class="ml-section alt" id="glance">
+  <div class="ml-section-inner">
+    <div class="glance">
+      <div class="glance-head">
+        <div><span class="kicker">Printable one-page summary</span><h2>First 90 Days at a Glance</h2></div>
+        <div class="who">Shika Mahdavi, PhD<br>Director, Learning Products · Fidelity Brokerage Talent &amp; Learning<br>shikamahdavi.com</div>
+      </div>
+      <div class="glance-grid">
+        <div><h4>What I heard</h4><ul>
+          <li>Small, skilled team early in a new model (Rachel)</li>
+          <li>Move from order taking to consulting; get to root cause faster (Rachel)</li>
+          <li>Any door, one consistent experience (Rachel)</li>
+          <li>Scale learning into the flow of work and manager practice (Jeff)</li>
+          <li>Static content goes stale; leaders expect traditional formats (Jeff)</li>
+          <li>Shared fundamentals, flexible by business (Jeff)</li>
+        </ul></div>
+        <div><h4>Days 1-30 · Observe, listen, map</h4><ul>
+          <li>Meet Rachel, the team, Line HR</li>
+          <li>Shadow real requests end to end</li>
+          <li>Map channels, handoffs, decision differences</li>
+          <li>Review portfolio, content lifecycle, data</li>
+          <li>Learn each person's strengths</li>
+          <li>Deliver current-state, friction, and decision-rights maps</li>
+        </ul></div>
+        <div><h4>Days 31-60 · Codify, prioritize, empower</h4><ul>
+          <li>Co-create consulting framework and intake model</li>
+          <li>Common discovery questions and guardrails</li>
+          <li>Prioritization rubric with visible trade-offs</li>
+          <li>Decision rights and escalation points</li>
+          <li>Content lifecycle and product principles</li>
+          <li>Select one pilot</li>
+        </ul></div>
+        <div><h4>Days 61-90 · Pilot, measure, refine</h4><ul>
+          <li>Run one real request through the model</li>
+          <li>Decision authority with the person closest to the work</li>
+          <li>Compare time to diagnosis and handoffs</li>
+          <li>Gather stakeholder feedback</li>
+          <li>Refine intake and decision rights</li>
+          <li>Deliver 6-12 month roadmap</li>
+        </ul></div>
+        <div><h4>What I would measure</h4><ul>
+          <li>Consulting: time to root cause, handoffs, stakeholder experience, decision consistency</li>
+          <li>Capability: readiness, confidence, skill demonstration</li>
+          <li>Application: workflow use, behavior change, reinforcement</li>
+          <li>Business: quality, productivity, time to proficiency</li>
+        </ul></div>
+        <div><h4>What I would validate</h4><ul>
+          <li>Request volume, intake paths, turnaround</li>
+          <li>Where handoffs occur and decisions differ</li>
+          <li>Costliest content to maintain; most-used solutions</li>
+          <li>Effective manager-owned learning today</li>
+          <li>What Enterprise Learning provides; available metrics</li>
+          <li>Centralized vs. distributed; current decision rights</li>
+        </ul></div>
+        <div><h4>How AI could support intake</h4><ul>
+          <li>Ask consistent discovery questions at any door</li>
+          <li>Surface root-cause hypotheses and flag weak evidence</li>
+          <li>Suggest options beyond training</li>
+          <li>Show patterns across requests</li>
+          <li>Never approve, reject, or decide. Human review always</li>
+        </ul></div>
+        <div><h4>How I would lead the team</h4><ul>
+          <li>Start from each person's strengths and craft</li>
+          <li>Model discovery on real requests</li>
+          <li>Review decisions together, then widen autonomy</li>
+          <li>Shared guardrails instead of approvals</li>
+          <li>Direct, specific feedback that builds confidence</li>
+          <li>Connect every piece of work to a business outcome</li>
+        </ul></div>
+      </div>
+      <div class="glance-foot"><span>Shika Mahdavi, PhD · shikamahdavi.com</span><span>A starting hypothesis built from interview conversations, to be validated with the team</span></div>
+    </div>
+    <div class="no-print" style="margin-top:1.2rem;display:flex;gap:.6rem;flex-wrap:wrap">
+      <button class="pbtn" id="printGlance">Print this page only</button>
+      <button class="pbtn sec" onclick="window.print()">Print full plan</button>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="ml-section dark reveal" id="close">
+  <div class="ml-section-inner closing">
+    <div>
+      <span class="kicker">Closing</span>
+      <p class="lead">Rachel has built a team that works on the right problems. The next step is to make <em>how</em> it decides as clear as <em>what</em> it works on, so the model holds up as demand grows and as the team takes on more of it.</p>
+      <p style="color:#B9CEC1;max-width:640px;margin-top:1rem">I would welcome the chance to test these hypotheses against what you know, and to adjust them.</p>
+    </div>
+    <div class="contact-card">
+      <div class="nm">Shika Mahdavi, PhD</div>
+      <div class="rl">Talent Development &amp; Performance Strategy</div>
+      <div class="btns">
+        <a class="btn btn-solid" href="https://shikamahdavi.com" target="_blank" rel="noopener">shikamahdavi.com</a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/shika-lanae-hershel-ed-d" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="mailto:shika.mahdavi@gmail.com">Email me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="fid-footer">
+  <span>shika mahdavi, phd · director, learning products · first 90 days</span>
+  <span>independent candidate work. not affiliated with or endorsed by fidelity investments. prototype data is fictional.</span>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+
+  /* ---------- page chrome ---------- */
+  var links = $$('#fidLinks a');
+  var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  function onScroll() {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    $('#fidProgress').style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+    $('#toTop').classList.toggle('show', h.scrollTop > 600);
+    var cur = null;
+    sections.forEach(function (s) { if (s.getBoundingClientRect().top < 140) cur = s.id; });
+    links.forEach(function (a) {
+      var on = a.getAttribute('href') === '#' + cur;
+      if (on && !a.classList.contains('active')) a.scrollIntoView({ block: 'nearest', inline: 'center' });
+      a.classList.toggle('active', on);
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  $('#toTop').addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  var counted = false;
+  function runCounters() {
+    $$('.counter').forEach(function (el) {
+      var to = +el.getAttribute('data-to'), t0 = null;
+      function step(ts) { if (!t0) t0 = ts; var p = Math.min((ts - t0) / 1200, 1); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); }
+      requestAnimationFrame(step);
+    });
+  }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          if (e.target.id === 'measure' && !counted) { counted = true; runCounters(); }
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.06 });
+    $$('.reveal').forEach(function (el) { io.observe(el); });
+  } else { $$('.reveal').forEach(function (el) { el.classList.add('in'); }); runCounters(); }
+  window.addEventListener('beforeprint', function () { $$('.reveal').forEach(function (el) { el.classList.add('in'); }); $$('.counter').forEach(function (el) { el.textContent = el.getAttribute('data-to'); }); });
+
+  /* ---------- generic tabs ---------- */
+  $$('[data-tabs]').forEach(function (box) {
+    var btns = $$('[data-tab]', box);
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        btns.forEach(function (x) { x.classList.toggle('on', x === b); });
+        $$('[data-panel]', box).forEach(function (p) { p.classList.toggle('on', p.getAttribute('data-panel') === b.getAttribute('data-tab')); });
+      });
+    });
+  });
+
+  /* ---------- What I heard themes ---------- */
+  var THEMES = [
+    { s: 'both', t: 'The learning model is still evolving', h: 'Jeff said Fidelity is still figuring out the right model. Rachel said the team is early in this one.', m: 'Build the way of working with the team, as a model that can change, and avoid locking in structures too early.' },
+    { s: 'both', t: 'Scaling with a small team', h: 'Rachel leads three practitioners. Jeff noted Brokerage uses fewer learning professionals than other parts of Fidelity.', m: 'Capacity is the constraint. Scale has to come from better decisions, reuse, and manager ownership, not headcount.' },
+    { s: 'jeff', t: 'Learning closer to the flow of work', h: 'Jeff described embedding learning in work and designing for how employees consume information today.', m: 'Default to performance support, reinforcement, and workflow resources, with formal programs used deliberately.' },
+    { s: 'jeff', t: 'Static content creates maintenance problems', h: 'Jeff said static content goes out of date very quickly.', m: 'Every asset needs an owner, a review trigger, and a retirement path. Build only what must be built.' },
+    { s: 'jeff', t: 'Leaders default to traditional expectations', h: 'Leaders often learned in traditional ways and may expect workshops or modules.', m: 'Consulting conversations have to help leaders see options beyond a course, using evidence rather than opinion.' },
+    { s: 'both', t: 'The team needs stronger consulting behavior', h: 'Rachel wants the team to stop being order takers. Jeff emphasized consulting with leaders.', m: 'This is a coaching and leadership challenge as much as a process one. Model it, practice it on real work, review it together.' },
+    { s: 'rachel', t: 'Intake must be faster and more consistent', h: 'Rachel wants modern intake that is fast, structured, gets to root cause quickly, and reduces handoffs.', m: 'Shared discovery questions and decision guardrails at every door. AI may help with structure and speed.' },
+    { s: 'rachel', t: 'Prioritization stays focused on high value', h: 'The team is intentionally focused on AI, product management, Fidelity Digital Assets, the digital organization, and UX research adjacency.', m: 'Protect that focus. Make the criteria explicit so the team can say no consistently and explain why.' },
+    { s: 'jeff', t: 'Managers should own more of the experience', h: 'Jeff described embedding learning in manager practices and helping managers own part of it.', m: 'Design tools that managers use in their normal rhythm, and make reinforcement a named responsibility.' },
+    { s: 'jeff', t: 'Flexibility within shared principles', h: 'Fidelity businesses are diverse. Common fundamentals, but not one rigid model. Brokerage can move faster.', m: 'Define what is standard and what flexes by business. Work alongside Enterprise Learning rather than duplicating it.' }
+  ];
+  var srcLabel = { rachel: 'Rachel', jeff: 'Jeff', both: 'Rachel + Jeff' };
+  $('#themeGrid').innerHTML = THEMES.map(function (x) {
+    return '<div class="theme-card" data-s="' + x.s + '" tabindex="0"><span class="plus">+</span><span class="src">' + srcLabel[x.s] + '</span><h4>' + esc(x.t) + '</h4><p class="heard">' + esc(x.h) + '</p><div class="means"><b>What it means for the role</b>' + esc(x.m) + '</div></div>';
+  }).join('');
+  $$('.theme-card').forEach(function (c) {
+    var tog = function () { c.classList.toggle('open'); };
+    c.addEventListener('click', tog);
+    c.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tog(); } });
+  });
+  $$('#themeFilter .chip-btn').forEach(function (b) {
+    b.addEventListener('click', function () {
+      $$('#themeFilter .chip-btn').forEach(function (x) { x.classList.toggle('on', x === b); });
+      var f = b.getAttribute('data-f');
+      $$('.theme-card').forEach(function (c) { c.classList.toggle('hide', f !== 'all' && c.getAttribute('data-s') !== f); });
+    });
+  });
+
+  /* ---------- Validate ---------- */
+  var VAL = [
+    ['Current request volume', 'Rachel said the team is not yet overwhelmed. Knowing the real baseline tells me how much process is warranted now versus later.', 'Request logs or email trails for the past two quarters; conversations with each team member.'],
+    ['Current intake paths', 'The model accepts many doors. I need to know which ones exist and which carry the most work.', 'Trace recent requests back to where they started.'],
+    ['Where handoffs occur', 'Rachel wants fewer unnecessary handoffs. I need to see which ones add value and which only add time.', 'Shadow two or three requests end to end.'],
+    ['Where decisions differ by team member', 'The core consistency risk Rachel described. This sets the baseline for decision consistency.', 'Walk through recent yes and no decisions with each person, then compare.'],
+    ['Current turnaround time', 'Baseline for time to diagnosis and time to solution, so the pilot can be compared fairly.', 'Dates from request to first conversation to decision.'],
+    ['Work most costly to maintain', 'Jeff named stale content as a real problem. Maintenance cost drives build and retire decisions.', 'Portfolio review with the learning experience architect and implementation specialist.'],
+    ['Most heavily used solutions', 'Usage shows what is working and what to protect before changing anything.', 'Platform and usage data already available.'],
+    ['Where managers already own learning well', 'Jeff wants managers to own more. Existing bright spots are the best model to scale.', 'Ask Line HR and leaders where it is already happening.'],
+    ['What Enterprise Learning already provides', 'Avoid rebuilding what exists. Brokerage can adapt enterprise resources rather than duplicate them.', 'Meet Enterprise Talent, Learning, and D&I partners; review their catalog and standards.'],
+    ['Which metrics are currently available', 'Measurement has to start from available data, not an ideal list.', 'Inventory with Line HR, analytics partners, and business leaders.'],
+    ['What Rachel wants centralized versus distributed', 'This sets the boundaries for decision guardrails and my own role.', 'A direct conversation with Rachel in the first two weeks.'],
+    ['What decision rights currently exist', 'Formal or informal, these are the starting point for a decision-rights model, not a blank page.', 'Ask each team member and key partners who decides what today.']
+  ];
+  $('#valList').innerHTML = VAL.map(function (v, i) {
+    return '<div class="acc-item" data-i="' + i + '"><div class="acc-head"><button class="chk" aria-label="Mark validated">✓</button><span class="t">' + esc(v[0]) + '</span><span class="ar">›</span></div><div class="acc-body"><div><b>Why it matters</b>' + esc(v[1]) + '</div><div><b>How I would find out</b>' + esc(v[2]) + '</div></div></div>';
+  }).join('');
+  function valUpdate() {
+    var n = $$('#valList .acc-item.done').length;
+    $('#valCount').textContent = n + ' of ' + VAL.length + ' validated';
+    $('#valBar').style.width = (n / VAL.length * 100) + '%';
+  }
+  $$('#valList .acc-item').forEach(function (it) {
+    $('.acc-head', it).addEventListener('click', function (e) {
+      if (e.target.classList.contains('chk')) { e.target.classList.toggle('on'); it.classList.toggle('done'); valUpdate(); return; }
+      it.classList.toggle('open');
+    });
+  });
+  $('#valExpand').addEventListener('click', function () {
+    var anyClosed = $$('#valList .acc-item:not(.open)').length > 0;
+    $$('#valList .acc-item').forEach(function (it) { it.classList.toggle('open', anyClosed); });
+    this.textContent = anyClosed ? 'Collapse all' : 'Expand all';
+  });
+
+  /* ---------- Consulting flow ---------- */
+  var IV = {
+    'Learning': 'When there is a genuine knowledge or skill gap that people cannot close on the job. Reuse enterprise resources first; build modular.',
+    'Coaching': 'When people know what to do but apply it unevenly, and individual feedback and practice will close the gap.',
+    'Manager reinforcement': 'When behavior fades without follow-through. Managers own expectations and check-ins in the normal rhythm of work.',
+    'Process': 'When the steps, handoffs, or ownership make the right behavior hard. Fix the process with its owner before teaching it.',
+    'Technology': 'When the tool, access, or workflow integration is the barrier. Partner with technology; training will not fix system friction.',
+    'Performance support': 'When the task is infrequent, procedural, or changes often. A job aid or in-flow resource beats a course.',
+    'Combination': 'Most real problems. For example, a process fix plus a job aid plus manager check-ins, sequenced and measured together.'
+  };
+  var FLOW = [
+    { n: 'Business Need', q: ['What prompted this request now?', 'Which business priority does it connect to?'], g: 'Prevents: starting with the deliverable the requester named.' },
+    { n: 'What is happening?', q: ['What are people doing today?', 'What evidence do we have, and how good is it?'], g: 'Prevents: diagnosing from a single anecdote or perception.' },
+    { n: 'What should people be able to do differently?', q: ['What does good look like, in observable terms?', 'Who needs to do it, and how often?'], g: 'Prevents: vague goals like "awareness" that cannot be measured.' },
+    { n: 'What is preventing that today?', q: ['Is it knowledge, skill, motivation, process, technology, expectations, manager support, or ownership?', 'Is it widespread or localized?'], g: 'Prevents: assuming the barrier is always a lack of training.' },
+    { n: 'Root Cause', q: ['Which barrier, if removed, changes the behavior most?', 'What would we need to see to confirm it?'], g: 'Prevents: solving symptoms. This is where "order taking" stops.', key: true },
+    { n: 'Choose Intervention', q: ['Which option, or mix, addresses the root cause with the least to build and maintain?'], g: 'Training is one of seven options.', iv: true, key: true },
+    { n: 'Define Success Measure', q: ['What will we observe at 30, 60, and 90 days?', 'Who owns the business outcome?'], g: 'Prevents: measuring completions instead of performance.' },
+    { n: 'Deliver', q: ['Who is closest to the work and can decide within guardrails?', 'What is the smallest version we can ship?'], g: 'Prevents: unnecessary handoffs and approval queues.' },
+    { n: 'Observe Performance', q: ['Did the behavior change in the work?', 'Are managers reinforcing it?'], g: 'Prevents: declaring success at launch.' },
+    { n: 'Refine', q: ['What do we keep, change, scale, or retire?'], g: 'Prevents: assets that outlive their usefulness.' }
+  ];
+  $('#flow').innerHTML = FLOW.map(function (f, i) {
+    return (i ? '<div class="flow-arrow">↓</div>' : '') + '<button class="flow-step' + (f.key ? ' key' : '') + '" data-i="' + i + '"><span class="num">' + String(i + 1).padStart(2, '0') + '</span>' + esc(f.n) + '</button>';
+  }).join('');
+  function showFlow(i) {
+    var f = FLOW[i];
+    $$('.flow-step').forEach(function (b) { b.classList.toggle('on', +b.getAttribute('data-i') === i); });
+    var html = '<span class="kicker">Step ' + (i + 1) + ' of ' + FLOW.length + '</span><h3>' + esc(f.n) + '</h3>' +
+      '<div class="qs"><b>Questions every team member asks</b><ul>' + f.q.map(function (q) { return '<li>' + esc(q) + '</li>'; }).join('') + '</ul></div>' +
+      '<div class="guard"><b>Why this step exists</b>' + esc(f.g) + '</div>';
+    if (f.iv) {
+      html += '<div class="iv-chips">' + Object.keys(IV).map(function (k, j) { return '<button class="iv-chip' + (j === 0 ? ' on' : '') + '" data-k="' + esc(k) + '">' + esc(k) + '</button>'; }).join('') + '</div><div class="iv-desc" id="ivDesc"><b>Learning:</b> ' + esc(IV['Learning']) + '</div>';
+    }
+    $('#flowDetail').innerHTML = html;
+    $$('.iv-chip').forEach(function (c) {
+      c.addEventListener('click', function () {
+        $$('.iv-chip').forEach(function (x) { x.classList.toggle('on', x === c); });
+        var k = c.getAttribute('data-k');
+        $('#ivDesc').innerHTML = '<b>' + esc(k) + ':</b> ' + esc(IV[k]);
+      });
+    });
+  }
+  $$('.flow-step').forEach(function (b) { b.addEventListener('click', function () { showFlow(+b.getAttribute('data-i')); }); });
+  showFlow(5);
+
+  /* ---------- Any door ---------- */
+  var DOORS = [
+    { n: 'Rachel', k: 'Leader', x: 'Rachel passes along a request from a senior partner. The team member who picks it up runs the same discovery as for any other request. Rachel gets a clear recommendation and does not need to broker the decision.' },
+    { n: 'Learning team member', k: 'Peer', x: 'A designer hears about a need in a project meeting. They log it and start discovery themselves, rather than forwarding it to someone else to triage.' },
+    { n: 'HR partner', k: 'Line HR', x: 'A Line HR partner raises a capability concern. They are consulted on business priority, and they see the same rubric the team uses to decide.' },
+    { n: 'Business leader', k: 'Requester', x: 'A leader asks for a workshop. Discovery reframes it around the outcome they need. They still own the business result, and they get options with clear trade-offs.' },
+    { n: 'Manager', k: 'Front line', x: 'A manager flags that their team is struggling. Discovery checks whether it is local or widespread, and what the manager can reinforce directly.' },
+    { n: 'Enterprise Learning partner', k: 'Enterprise', x: 'Enterprise Learning offers a resource or standard. The same logic decides whether Brokerage adopts it, adapts it, or builds only what is missing.' }
+  ];
+  var doorY = [28, 85, 142, 199, 256, 313];
+  $('#doors').innerHTML = DOORS.map(function (d, i) { return '<button class="door" data-i="' + i + '">' + esc(d.n) + '<small>' + esc(d.k) + '</small></button>'; }).join('');
+  $('#doorSvg').innerHTML = doorY.map(function (y, i) { return '<path data-i="' + i + '" d="M0 ' + y + ' C 30 ' + y + ', 30 170, 60 170"/>'; }).join('');
+  var pulseT;
+  function showDoor(i) {
+    $$('.door').forEach(function (b) { b.classList.toggle('on', +b.getAttribute('data-i') === i); });
+    $$('#doorSvg path').forEach(function (p) { p.classList.toggle('on', +p.getAttribute('data-i') === i); });
+    var d = DOORS[i];
+    $('#doorOutcome').innerHTML = '<span class="tag">Entered via ' + esc(d.n) + '</span><h4 style="margin-top:.4rem">What happens next</h4><p>' + esc(d.x) + '</p><span class="tag">Same at every door</span><p style="margin:.3rem 0 0">Same questions, same root-cause lens, same rubric, same guardrails, same follow-through.</p>';
+    var steps = $$('.engine-step'); clearTimeout(pulseT);
+    steps.forEach(function (s) { s.classList.remove('pulse'); });
+    (function seq(k) { if (k > 0) steps[k - 1].classList.remove('pulse'); if (k < steps.length) { steps[k].classList.add('pulse'); pulseT = setTimeout(function () { seq(k + 1); }, 260); } })(0);
+  }
+  $$('.door').forEach(function (b) { b.addEventListener('click', function () { showDoor(+b.getAttribute('data-i')); }); });
+  showDoor(3);
+
+  /* ---------- AI prototype ---------- */
+  var step = 0, MAXS = 8;
+  $('#dots').innerHTML = Array.apply(null, Array(MAXS + 1)).map(function () { return '<i></i>'; }).join('');
+  function radioVal(n) { var r = $('input[name="' + n + '"]:checked'); return r ? r.value : ''; }
+  function barriers() { return $$('#q6 input:checked').map(function (c) { return c.value; }); }
+  function syncOpts() { $$('.opt').forEach(function (o) { o.classList.toggle('sel', $('input', o).checked); }); }
+  $$('.opt input').forEach(function (i) { i.addEventListener('change', syncOpts); });
+  function canAdvance() {
+    if (step === 0) return $('#reqText').value.trim().length > 3;
+    return true;
+  }
+  function render() {
+    $$('.qstep').forEach(function (q) { q.classList.toggle('on', +q.getAttribute('data-step') === step); });
+    $$('#dots i').forEach(function (d, i) { d.className = i < step ? 'done' : (i === step ? 'cur' : ''); });
+    $('#pBack').disabled = step === 0;
+    $('#pNext').textContent = step === 0 ? 'Start intake' : (step === MAXS ? 'Generate simulated diagnosis' : 'Next');
+    $('#pJump').style.display = (step > 0 && step < MAXS && $('#reqText').dataset.example) ? 'inline-flex' : 'none';
+  }
+  $('#pNext').addEventListener('click', function () {
+    if (!canAdvance()) { $('#reqText').focus(); $('#reqText').placeholder = 'Enter a request to begin, or load an example above'; return; }
+    if (step < MAXS) { step++; render(); } else { diagnose(); }
+  });
+  $('#pBack').addEventListener('click', function () { if (step > 0) { step--; render(); } });
+  $('#pJump').addEventListener('click', function () { step = MAXS; render(); diagnose(); });
+  $('#reqText').addEventListener('input', function () { delete this.dataset.example; });
+
+  var EX = {
+    1: { req: 'We need training because managers are not giving employees feedback consistently.', door: 'Business leader', q1: 'Quality or consistency of work', q2: 'Managers give specific, timely feedback after observed work, on a regular rhythm.', q3: 'Managers', q4: 'Stakeholder perception', q5: 'Inconsistent employee experience', q6: ['expectations', 'manager'], q7: 'Widespread', q8t: '90 days', q8: 'Employees report regular, specific feedback conversations, and recurring performance issues decline.' },
+    2: { req: 'We need a course on a new tool.', door: 'Manager', q1: 'Adoption of a new tool or process', q2: 'Employees use the new tool as part of their daily workflow.', q3: 'Individual contributors', q4: 'No evidence yet', q5: 'Workarounds outside the intended process', q6: ['technology', 'process'], q7: 'Unknown', q8t: '60 days', q8: 'Employees complete the core task in the tool without workarounds.' }
+  };
+  function setRadio(n, v) { $$('input[name="' + n + '"]').forEach(function (r) { r.checked = r.value === v; }); }
+  function loadEx(k) {
+    var e = EX[k];
+    $('#reqText').value = e.req; $('#reqText').dataset.example = k; $('#reqDoor').value = e.door;
+    $('#q1').value = e.q1; $('#q2').value = e.q2; setRadio('q3', e.q3); setRadio('q4', e.q4); $('#q5').value = e.q5;
+    $$('#q6 input').forEach(function (c) { c.checked = e.q6.indexOf(c.value) > -1; });
+    setRadio('q7', e.q7); $('#q8t').value = e.q8t; $('#q8').value = e.q8;
+    syncOpts(); step = 1; render(); clearOut();
+  }
+  $$('.ex-btn').forEach(function (b) { b.addEventListener('click', function () { loadEx(b.getAttribute('data-ex')); }); });
+
+  function clearOut() { $('#outEmpty').style.display = 'block'; $('#outThinking').style.display = 'none'; $('#outDx').style.display = 'none'; $('#outDx').innerHTML = ''; }
+  $('#pReset').addEventListener('click', function () {
+    $('#reqText').value = ''; delete $('#reqText').dataset.example; $('#reqDoor').selectedIndex = 0;
+    ['#q1', '#q5'].forEach(function (s) { $(s).value = ''; }); $('#q2').value = ''; $('#q8').value = ''; $('#q8t').value = '90 days';
+    $$('.proto input').forEach(function (i) { i.checked = false; });
+    syncOpts(); step = 0; render(); clearOut();
+  });
+
+  var CAT = {
+    knowledge: { l: 'Knowledge gap', type: 'Learning', iv: ['Performance support or job aid for the specific task', 'Short, targeted learning asset', 'Check existing enterprise resources before building'], m: ['Readiness check results', 'Questions and escalations on the topic'], oq: 'Can people explain what good looks like if asked directly?' },
+    skill: { l: 'Skill gap', type: 'Learning', iv: ['Targeted skill practice with feedback', 'Guided practice on real work', 'Structured learning if the skill is foundational and new'], m: ['Skill demonstration in observed practice', 'Manager observation', 'Quality of the work output'], oq: 'Have people had a real chance to practice this with feedback?' },
+    motivation: { l: 'Motivation or incentives', type: 'Coaching', iv: ['Work with the leader on what is rewarded and what is tolerated', 'Manager conversations on expectations and consequences'], m: ['Behavior frequency after expectations are reset', 'Manager observation'], oq: 'Is the right behavior rewarded, ignored, or penalized today?' },
+    process: { l: 'Process friction', type: 'Process', iv: ['Clarify or redesign the process with its owner', 'Job aid only after the process is settled'], m: ['Cycle time', 'Rework or error rate', 'Number of handoffs'], oq: 'Could a skilled person do this well inside the current process?' },
+    technology: { l: 'Technology or workflow friction', type: 'Technology', iv: ['Partner with the technology owner on workflow integration and access', 'In-tool guidance or performance support'], m: ['Active use in the workflow', 'Workaround frequency', 'Support requests'], oq: 'Can users complete the task if someone sits beside them?' },
+    expectations: { l: 'Unclear expectations', type: 'Coaching', iv: ['Leader defines and communicates the standard', 'Examples of what good looks like'], m: ['Employee feedback quality', 'Performance issue recurrence'], oq: 'Have expectations been stated explicitly, and by whom?' },
+    manager: { l: 'Manager reinforcement', type: 'Coaching', iv: ['Manager coaching guide', 'Manager accountability checkpoints'], m: ['Manager coaching frequency', 'Leader confidence'], oq: 'Do managers know this is expected of them, and do they have time for it?' },
+    ownership: { l: 'Unclear ownership', type: 'Process', iv: ['Clarify who owns the decision or outcome with the business leader', 'Simple decision-rights agreement'], m: ['Decision turnaround', 'Escalations'], oq: 'Who would say this is their job to fix?' }
+  };
+  var KW = {
+    manager: /manager|feedback|coach|one-on-one|1:1/i,
+    technology: /\btools?\b|system|platform|software|application|\bapp\b|portal|technology/i,
+    process: /process|handoff|workflow|procedure/i,
+    knowledge: /\bknow\b|understand|aware|new hire|onboard/i
+  };
+  var SOLN = /\b(training|course|workshop|module|class|session|e-?learning|program)\b/i;
+
+  function diagnose() {
+    var A = { req: $('#reqText').value.trim(), door: $('#reqDoor').value, q1: $('#q1').value, q2: $('#q2').value.trim(), q3: radioVal('q3'), q4: radioVal('q4'), q5: $('#q5').value, q6: barriers(), q7: radioVal('q7'), q8t: $('#q8t').value, q8: $('#q8').value.trim() };
+    $('#outEmpty').style.display = 'none'; $('#outDx').style.display = 'none'; $('#outThinking').style.display = 'block';
+    if (window.innerWidth < 900) $('#outPanel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(function () { $('#outThinking').style.display = 'none'; $('#outDx').innerHTML = buildDx(A); $('#outDx').style.display = 'block'; wireReview(); }, 900);
+  }
+
+  function buildDx(A) {
+    var score = {}; Object.keys(CAT).forEach(function (k) { score[k] = 0; });
+    A.q6.forEach(function (b) { score[b] += 2; });
+    Object.keys(KW).forEach(function (k) { if (KW[k].test(A.req + ' ' + A.q2)) score[k] += 1; });
+    var ranked = Object.keys(score).filter(function (k) { return score[k] > 0; }).sort(function (a, b) { return score[b] - score[a]; });
+    var top = ranked.filter(function (k) { return score[k] >= 2; }).slice(0, 2);
+    if (!top.length && ranked.length) top = ranked.slice(0, 1);
+    var hasTop = function (k) { return top.indexOf(k) > -1; };
+    var techCase = KW.technology.test(A.req) && (hasTop('technology') || !A.q6.length);
+    var mgrCase = hasTop('manager') && hasTop('expectations');
+    var learningOnly = top.length > 0 && top.every(function (k) { return k === 'knowledge' || k === 'skill'; });
+
+    // confidence
+    var c = 0, why = [];
+    var ev = { 'Observed performance data': 2, 'Audit or quality findings': 2, 'Employee feedback': 1, 'Stakeholder perception': 0, 'No evidence yet': -2 };
+    c += (A.q4 in ev ? ev[A.q4] : -1);
+    var nb = A.q6.length;
+    if (nb === 0) { c -= 2; why.push('No barrier identified yet'); } else if (nb <= 2) { c += 1; } else if (nb >= 4) { c -= 1; why.push('Many barriers selected; primary cause unclear'); }
+    if (A.q1 && A.q1 !== 'Not yet defined') c += 1; else { c -= 1; why.push('Business outcome not defined'); }
+    if (A.q7 === 'Widespread' || A.q7 === 'Localized') c += 1; else why.push('Scope unknown');
+    if (A.q8.length > 10) c += 1; else why.push('Success not yet defined');
+    if (A.q2.length > 10) c += 1; else why.push('Target behavior not described');
+    var level = c >= 5 ? 3 : (c >= 2 ? 2 : 1);
+    if (A.q4 === 'Stakeholder perception' && level > 2) { level = 2; }
+    if (A.q4 === 'Stakeholder perception') why.unshift('Evidence is stakeholder perception, not yet confirmed with performance data');
+    if (A.q4 === 'No evidence yet' || !A.q4) { level = 1; why.unshift('No evidence yet that this is a learning issue'); }
+    if (level === 3 && !why.length) why.push('Evidence, outcome, scope, and success measure are all defined');
+    var lvlName = ['', 'Low', 'Medium', 'High'][level];
+
+    // flags
+    var flags = [];
+    if (SOLN.test(A.req)) flags.push('The request names a solution before the problem is defined. Treating "' + (A.req.match(SOLN)[0]) + '" as a hypothesis, not an order.');
+    if (A.q7 === 'Unknown' || !A.q7) flags.push('Scope unknown. Confirm whether this is widespread or localized before sizing any solution.');
+    if (A.q7 === 'Localized') flags.push('Localized issue. A targeted fix with the affected teams may serve better than a scalable product.');
+    if (nb >= 4) flags.push('Several barriers selected. Discovery should narrow down which are primary.');
+
+    var headline, hyps = [], ivs = [], notRec, notWhy, measures = [], next, oqs = [];
+    if (techCase) {
+      headline = 'Potential technology adoption issue';
+      hyps = ['Poor workflow integration', 'Unclear process', 'Lack of access', 'Weak manager reinforcement', 'Genuine skill gap'];
+      ivs = ['Observe the workflow before designing anything', 'Partner with the technology owner on integration and access', 'In-tool guidance or a short job aid if a skill gap is confirmed', 'Manager check-ins on use in the first weeks'];
+      notRec = 'A standalone course on the tool, built before the workflow is observed';
+      notWhy = 'If people know what to do but cannot do it because of process or system friction, a course adds content to maintain without changing performance.';
+      measures = ['Active use in the workflow', 'Workaround frequency', 'Support requests', 'Time to complete the core task'];
+      next = 'Observe actual workflow and confirm whether users know what to do but cannot execute because of process or system friction.';
+      oqs = [CAT.technology.oq, 'Do all users have access and the right permissions?', 'Is the process the tool supports clearly defined?'];
+    } else if (mgrCase) {
+      headline = 'Manager reinforcement + unclear expectations';
+      hyps = ['Managers are unclear on what is expected of them', 'Feedback is not built into the normal rhythm of work', 'Some managers lack a simple, repeatable approach'];
+      ivs = ['Manager coaching guide', 'Performance support', 'Short targeted skill practice', 'Manager accountability checkpoints'];
+      notRec = 'Full multi-hour training program';
+      notWhy = 'The issue appears to be inconsistent application rather than lack of foundational knowledge.';
+      measures = ['Manager coaching frequency', 'Employee feedback quality', 'Performance issue recurrence', 'Leader confidence', 'Time to behavioral improvement'];
+      next = 'Validate the diagnosis with the business leader and affected employees before building content.';
+      oqs = [CAT.manager.oq, CAT.expectations.oq, 'Are some managers already doing this well? What is different for them?'];
+    } else if (top.length) {
+      headline = top.map(function (k) { return CAT[k].l; }).join(' + ');
+      hyps = ranked.slice(0, 4).map(function (k) { return CAT[k].l + (score[k] >= 2 ? '' : ' (signal from request wording only)'); });
+      top.forEach(function (k) { CAT[k].iv.forEach(function (x) { if (ivs.indexOf(x) < 0) ivs.push(x); }); CAT[k].m.forEach(function (x) { if (measures.indexOf(x) < 0) measures.push(x); }); oqs.push(CAT[k].oq); });
+      if (learningOnly) {
+        notRec = 'Building new content from scratch before checking existing enterprise resources';
+        notWhy = 'A learning need looks plausible, but Enterprise Learning or existing assets may already cover it. Reuse first, then build only what is missing, in modular form.';
+      } else {
+        notRec = 'Full multi-hour training program';
+        notWhy = 'The barriers identified (' + top.map(function (k) { return CAT[k].l.toLowerCase(); }).join(', ') + ') are not knowledge gaps. Training would not remove them.';
+      }
+      next = level === 1 ? 'Gather evidence first: observe the work and talk to affected employees before choosing an intervention.' : 'Validate the diagnosis with the business leader and affected employees before building content.';
+    } else {
+      headline = 'Not enough information to form a hypothesis';
+      hyps = ['Barrier not yet identified'];
+      ivs = ['Continue discovery before recommending anything'];
+      notRec = 'Committing to any solution at this stage';
+      notWhy = 'Without an identified barrier, any recommendation would be a guess.';
+      measures = ['Define after discovery'];
+      next = 'Schedule a discovery conversation with the requester and observe the work.';
+      oqs = ['What is the barrier? Revisit question 6 with the requester.'];
+    }
+
+    var type = techCase ? 'Technology' : (top.length > 1 && CAT[top[0]].type !== CAT[top[1]].type ? 'Mixed' : (top.length ? CAT[top[0]].type : 'Undetermined'));
+    var li = function (a) { return '<ul>' + a.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>'; };
+
+    var h = '';
+    h += '<div class="dx-block"><div class="route-note">Entered via ' + esc(A.door) + ' · Same 8 questions · Same decision logic · Classified as: ' + esc(type) + '</div></div>';
+    h += '<div class="dx-block"><div class="dx-label">Request as received</div><div style="font-style:italic;color:var(--ink2)">"' + esc(A.req) + '"</div></div>';
+    if (flags.length) h += '<div class="dx-block"><div class="dx-label">Flags for the consultant</div>' + flags.map(function (f) { return '<div class="dx-flag">' + esc(f) + '</div>'; }).join('') + '</div>';
+    h += '<div class="dx-block"><div class="dx-label">' + (techCase ? 'AI diagnosis' : 'Likely root cause') + '</div><div class="dx-head">' + esc(headline) + '</div></div>';
+    h += '<div class="dx-block"><div class="dx-label">Confidence</div><div class="conf"><div class="conf-bars l' + level + '"><i></i><i></i><i></i></div><span class="conf-val">' + lvlName + '</span></div><div class="conf-why">' + esc(why.slice(0, 3).join(' · ')) + '</div></div>';
+    h += '<div class="dx-block"><div class="dx-label">' + (techCase ? 'Possible root causes' : 'Hypotheses to test') + '</div>' + li(hyps) + '</div>';
+    h += '<div class="dx-block"><div class="dx-label">Recommended intervention options</div>' + li(ivs) + '</div>';
+    h += '<div class="dx-block"><div class="dx-not"><div class="dx-label" style="color:var(--rose)">Do not recommend</div><div class="x">' + esc(notRec) + '</div><p><b>Why:</b> ' + esc(notWhy) + '</p></div></div>';
+    h += '<div class="dx-block"><div class="dx-label">Suggested success measures · check at ' + esc(A.q8t) + '</div>' + li(measures) + (A.q8 ? '<div style="font-size:.85rem;color:var(--muted)">Requester\'s definition of success: "' + esc(A.q8) + '"</div>' : '') + '</div>';
+    h += '<div class="dx-block"><div class="dx-label">Open questions for the human reviewer</div>' + li(oqs) + '</div>';
+    h += '<div class="dx-block"><div class="dx-label">Suggested next step</div><div style="font-weight:600;color:var(--g800)">' + esc(next) + '</div></div>';
+    h += '<div class="dx-block"><div class="human"><div><b>Human review required before any decision.</b><span>This concept suggests. It does not approve, reject, or prioritize work.</span></div></div>' +
+      '<div class="review-row"><button class="pbtn sec" data-rv="Validate with stakeholders">Validate with stakeholders</button><button class="pbtn sec" data-rv="Revise the diagnosis">Revise the diagnosis</button><button class="pbtn sec" data-rv="Gather more evidence">Gather more evidence</button></div><div class="review-log" id="reviewLog"></div></div>';
+    return h;
+  }
+  function wireReview() {
+    $$('[data-rv]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        $$('[data-rv]').forEach(function (x) { x.classList.toggle('pbtn', true); x.classList.toggle('sec', x !== b); });
+        $('#reviewLog').textContent = 'Reviewer decision recorded: ' + b.getAttribute('data-rv') + '. Decision made by a person, not the AI.';
+      });
+    });
+  }
+  render();
+
+  /* ---------- Dashboard ---------- */
+  var DASH = {
+    rachel:  { n: 'Rachel', c: [3, 2, 1, 1, 2], asked: 5, days: 3.1, hand: 1.2, redir: 3 },
+    team:    { n: 'Learning team member', c: [4, 1, 2, 1, 1], asked: 6, days: 3.4, hand: 1.3, redir: 4 },
+    hr:      { n: 'HR partner', c: [2, 3, 2, 1, 1], asked: 7, days: 4.0, hand: 1.8, redir: 5 },
+    leader:  { n: 'Business leader', c: [3, 1, 2, 3, 2], asked: 9, days: 4.6, hand: 2.1, redir: 6 },
+    manager: { n: 'Manager', c: [1, 4, 1, 1, 0], asked: 5, days: 3.8, hand: 1.5, redir: 4 },
+    ent:     { n: 'Enterprise Learning', c: [1, 0, 1, 0, 1], asked: 2, days: 5.2, hand: 2.4, redir: 1 }
+  };
+  var CATS = ['Learning', 'Coaching / manager', 'Process', 'Technology', 'Mixed'];
+  var CCOL = ['#14563D', '#3E7CC4', '#C08A2E', '#7A5CC0', '#8FC3A3'];
+  var THEMESD = [
+    { t: 'Manager feedback consistency', n: 9, s: 'mgr', sl: 'Manager support', d: ['manager', 'hr', 'leader'] },
+    { t: 'New tool adoption', n: 7, s: 'tech', sl: 'Tech friction', d: ['leader', 'manager', 'team'] },
+    { t: 'Cross-team handoffs', n: 6, s: 'proc', sl: 'Process friction', d: ['leader', 'hr', 'team'] },
+    { t: 'AI tool fluency', n: 6, s: '', sl: 'Capability gap', d: ['rachel', 'team', 'leader'] },
+    { t: 'Onboarding readiness', n: 5, s: '', sl: 'Capability gap', d: ['hr', 'manager', 'ent'] },
+    { t: 'Role and decision clarity', n: 4, s: 'proc', sl: 'Unclear ownership', d: ['rachel', 'leader', 'hr'] }
+  ];
+  function agg(f) {
+    var keys = f === 'all' ? Object.keys(DASH) : [f];
+    var r = { c: [0, 0, 0, 0, 0], asked: 0, redir: 0, total: 0, dsum: 0, hsum: 0 };
+    keys.forEach(function (k) { var d = DASH[k]; var t = d.c.reduce(function (a, b) { return a + b; }, 0); d.c.forEach(function (v, i) { r.c[i] += v; }); r.asked += d.asked; r.redir += d.redir; r.total += t; r.dsum += d.days * t; r.hsum += d.hand * t; });
+    r.days = r.total ? (r.dsum / r.total) : 0; r.hand = r.total ? (r.hsum / r.total) : 0;
+    return r;
+  }
+  function renderDash() {
+    var f = $('#dashFilter').value, r = agg(f), max = Math.max.apply(null, r.c) || 1;
+    var kp = [
+      ['Total requests', r.total, 'Fictional quarter'],
+      ['Diagnosed as learning', r.c[0], Math.round(r.c[0] / r.total * 100) + '% of requests'],
+      ['Coaching-related', r.c[1], 'Incl. manager reinforcement'],
+      ['Process-related', r.c[2], 'Routed to process owners'],
+      ['Technology-related', r.c[3], 'Routed to tech partners'],
+      ['Mixed interventions', r.c[4], 'More than one lever'],
+      ['Avg. time to diagnosis', r.days.toFixed(1) + 'd', 'Request to root cause'],
+      ['Avg. handoffs', r.hand.toFixed(1), 'Per request'],
+      ['Redirected before content', r.redir, 'No new content built'],
+      ['Asked for training', r.asked, 'As originally requested']
+    ];
+    $('#kpis').innerHTML = kp.map(function (k) { return '<div class="kpi"><div class="k">' + k[0] + '</div><div class="v">' + k[1] + '</div><div class="s">' + k[2] + '</div></div>'; }).join('');
+    $('#mixChart').innerHTML = CATS.map(function (c, i) { return '<div class="hbar" title="' + c + ': ' + r.c[i] + '"><span>' + c + '</span><div class="track"><div class="fill" style="background:' + CCOL[i] + '" data-w="' + (r.c[i] / max * 100) + '"></div></div><span class="val">' + r.c[i] + '</span></div>'; }).join('') +
+      '<div class="legend" style="margin-top:1rem;font-size:.8rem;color:var(--muted)">' + (r.total - r.c[0]) + ' of ' + r.total + ' requests needed something other than learning alone.</div>';
+    requestAnimationFrame(function () { $$('#mixChart .fill').forEach(function (el) { el.style.width = el.getAttribute('data-w') + '%'; }); });
+    var mis = Math.max(r.asked - r.c[0], 0);
+    $('#compare').innerHTML = '<div><div class="big" style="color:var(--amber)">' + r.asked + '</div><small>arrived asking for training</small></div><div><div class="big" style="color:var(--g700)">' + r.c[0] + '</div><small>diagnosed as a learning need</small></div>';
+    var keys = f === 'all' ? Object.keys(DASH) : [f];
+    $('#doorStack').innerHTML = '<div class="cs" style="margin-bottom:.6rem">Diagnosis mix by entry point</div>' + keys.map(function (k) {
+      var d = DASH[k], t = d.c.reduce(function (a, b) { return a + b; }, 0);
+      return '<div class="stack-row"><span>' + d.n + '</span><div class="stack">' + d.c.map(function (v, i) { return v ? '<span title="' + CATS[i] + ': ' + v + '" style="width:' + (v / t * 100) + '%;background:' + CCOL[i] + '"></span>' : ''; }).join('') + '</div><span class="val" style="font-family:var(--mono);font-size:.8rem;text-align:right">' + t + '</span></div>';
+    }).join('') + '<div class="legend">' + CATS.map(function (c, i) { return '<span><i style="background:' + CCOL[i] + '"></i>' + c + '</span>'; }).join('') + '</div>';
+    var th = THEMESD.filter(function (t) { return f === 'all' || t.d.indexOf(f) > -1; });
+    $('#themeList').innerHTML = th.map(function (t) { return '<div class="theme-row"><span>' + t.t + '</span><span class="sig ' + t.s + '">' + t.sl + '</span><span class="n">' + (f === 'all' ? t.n : '·') + '</span></div>'; }).join('');
+    var ins = [];
+    ins.push('<b>' + mis + ' of ' + r.asked + '</b> requests that asked for training were diagnosed as something else. That is where consulting conversations add the most value.');
+    if (r.c[1] >= r.c[0] * 0.6) ins.push('<b>Coaching and manager reinforcement</b> account for ' + r.c[1] + ' requests. Managers may need tools and expectations more than their teams need courses.');
+    if (r.c[2] + r.c[3] > 0) ins.push('<b>' + (r.c[2] + r.c[3]) + ' requests</b> point to process or technology friction. These belong with process owners and technology partners, with learning in a supporting role.');
+    ins.push('<b>' + r.redir + ' requests</b> were resolved without building new content, which protects capacity and avoids future maintenance.');
+    if (f === 'all') ins.push('<b>Handoffs are highest</b> for requests entering via Enterprise Learning and business leaders. Worth checking whether those doors need clearer guardrails.');
+    $('#insights').innerHTML = ins.map(function (x) { return '<div class="insight">' + x + '</div>'; }).join('');
+  }
+  $('#dashFilter').addEventListener('change', renderDash);
+  renderDash();
+
+  /* ---------- Prioritization ---------- */
+  var CRIT = [
+    ['Business impact', 'Effect on a business outcome', 15, 0], ['Strategic relevance', 'Fit with Brokerage priorities', 12, 0], ['Performance gap', 'Size of the gap to close', 10, 0], ['Risk', 'Exposure if not addressed', 8, 0],
+    ['Audience size', 'People affected', 7, 0], ['Urgency', 'Time sensitivity', 7, 0], ['Scalability', 'Can extend to more groups', 8, 0], ['Reusability', 'Patterns or assets reusable', 7, 0],
+    ['Maintenance burden', 'Ongoing upkeep required', 7, 1], ['Effort', 'Team capacity to deliver', 7, 1], ['Technical dependencies', 'Reliance on other teams or systems', 6, 1], ['Existing solution availability', 'Something already exists', 6, 1]
+  ];
+  var REQS = [
+    { n: 'A · Manager feedback consistency', r: [4, 4, 4, 3, 4, 3, 4, 4, 2, 2, 1, 3] },
+    { n: 'B · Course for a new tool', r: [3, 3, 2, 2, 3, 4, 2, 2, 4, 3, 4, 4] },
+    { n: 'C · Capability build in a priority area', r: [5, 5, 4, 3, 3, 3, 5, 5, 3, 4, 2, 2] }
+  ];
+  var W = CRIT.map(function (c) { return c[2]; }), cur = 0;
+  function scoreOf(r) {
+    var tw = W.reduce(function (a, b) { return a + b; }, 0) || 1, s = 0;
+    r.forEach(function (v, i) { var n = CRIT[i][3] ? (5 - v) / 4 : (v - 1) / 4; s += W[i] * n; });
+    return s / tw * 100;
+  }
+  $('#reqTabs').innerHTML = REQS.map(function (q, i) { return '<button class="' + (i === 0 ? 'on' : '') + '" data-i="' + i + '">' + esc(q.n) + '</button>'; }).join('');
+  $$('#reqTabs button').forEach(function (b) { b.addEventListener('click', function () { cur = +b.getAttribute('data-i'); $$('#reqTabs button').forEach(function (x) { x.classList.toggle('on', x === b); }); buildCrit(); }); });
+  function buildCrit() {
+    var r = REQS[cur].r;
+    $('#critBody').innerHTML = CRIT.map(function (c, i) {
+      return '<tr><td class="cn">' + c[0] + (c[3] ? '<span class="inv">inverse</span>' : '') + '<small>' + c[1] + '</small></td><td><input type="range" min="1" max="5" step="1" value="' + r[i] + '" data-i="' + i + '" aria-label="' + c[0] + ' rating"></td><td class="r" id="rv' + i + '">' + r[i] + '</td><td><input type="number" min="0" max="30" value="' + W[i] + '" data-w="' + i + '" aria-label="' + c[0] + ' weight"></td><td class="ct" id="ct' + i + '"></td></tr>';
+    }).join('');
+    $$('#critBody input[type=range]').forEach(function (s) { s.addEventListener('input', function () { var i = +s.getAttribute('data-i'); REQS[cur].r[i] = +s.value; $('#rv' + i).textContent = s.value; updScore(); }); });
+    $$('#critBody input[type=number]').forEach(function (s) { s.addEventListener('input', function () { W[+s.getAttribute('data-w')] = Math.max(0, +s.value || 0); updScore(); }); });
+    updScore();
+  }
+  function updScore() {
+    var r = REQS[cur].r, tw = W.reduce(function (a, b) { return a + b; }, 0) || 1;
+    r.forEach(function (v, i) { var n = CRIT[i][3] ? (5 - v) / 4 : (v - 1) / 4; $('#ct' + i).textContent = (W[i] * n / tw * 100).toFixed(1); });
+    var s = scoreOf(r);
+    $('#scoreVal').textContent = Math.round(s);
+    $('#scoreBand').textContent = s >= 65 ? 'Strong candidate. Confirm with Line HR and the business leader.' : (s >= 45 ? 'Worth discussing. Look at what is driving the score.' : 'Likely redirect, reuse, or defer. Explain why to the requester.');
+    $('#rankList').innerHTML = REQS.map(function (q) { return { n: q.n, s: scoreOf(q.r) }; }).sort(function (a, b) { return b.s - a.s; }).map(function (x) { return '<div class="rank-row"><div>' + esc(x.n) + '<div class="t"><i style="width:' + x.s + '%"></i></div></div><span class="v">' + Math.round(x.s) + '</span></div>'; }).join('');
+  }
+  buildCrit();
+
+  /* ---------- Decision rights ---------- */
+  var ROLES = ['Director, Learning Products', 'Learning Experience Designer', 'Learning Experience Architect', 'Implementation Specialist', 'Line HR', 'Business Leader', 'Manager', 'Enterprise Learning', 'Technology Partner'];
+  var DEC = [
+    { d: 'Accept a request into discovery', c: ['I', 'D', 'D', 'D', 'C', 'C', '', '', ''], e: 'Request falls outside current priority areas, or the guardrails do not clearly apply.' },
+    { d: 'Diagnose the root cause', c: ['I', 'D', 'D', 'C', 'C', 'C', 'C', '', ''], e: 'The diagnosis conflicts with what the business leader expects and cannot be resolved with evidence.' },
+    { d: 'Recommend learning vs. non-learning intervention', c: ['C', 'R', 'R', 'C', 'C', 'C', 'C', '', 'C'], e: 'The recommendation is to decline or redirect a senior leader\'s request.' },
+    { d: 'Choose modality and design approach', c: ['I', 'D', 'C', 'C', '', 'I', '', 'C', ''], e: 'Rarely. Only if scope or cost exceeds agreed guardrails.' },
+    { d: 'Define the business outcome and success measure', c: ['C', 'C', 'C', '', 'C', 'D', 'C', '', ''], e: 'No measurable outcome can be agreed. Pause before building.' },
+    { d: 'Validate business priority', c: ['C', '', '', '', 'R', 'D', '', '', ''], e: 'Competing priorities across business areas. Escalate to Rachel with Line HR.' },
+    { d: 'Set portfolio priority and sequencing', c: ['D', 'C', 'C', 'C', 'C', 'C', '', 'I', ''], e: 'Trade-offs affect committed work or a priority area. Review with Rachel.' },
+    { d: 'Use enterprise resources vs. build new', c: ['I', 'C', 'D', '', '', '', '', 'C', ''], e: 'An enterprise standard conflicts with a Brokerage need.' },
+    { d: 'Reinforce learning in the flow of work', c: ['I', 'C', '', 'C', 'C', 'I', 'D', '', ''], e: 'Reinforcement is not happening and the outcome is at risk. Raise with the business leader.' },
+    { d: 'Rollout and implementation logistics', c: ['I', 'C', 'C', 'D', '', 'I', 'I', '', 'C'], e: 'Dependencies on other teams or systems block the timeline.' },
+    { d: 'Platform or system changes', c: ['C', '', 'C', 'C', '', 'I', '', 'C', 'D'], e: 'A change requires new investment or affects other businesses.' },
+    { d: 'Update or retire content', c: ['I', 'C', 'D', 'C', '', 'I', '', 'C', ''], e: 'Retiring content a leader still relies on.' }
+  ];
+  var CODE = { D: 'Decides', R: 'Recommends', C: 'Consulted', I: 'Informed' };
+  $('#drTable').innerHTML = '<thead><tr><th>Decision</th>' + ROLES.map(function (r, i) { return '<th data-r="' + i + '">' + r + '</th>'; }).join('') + '<th style="text-align:left">Escalate when</th></tr></thead><tbody>' +
+    DEC.map(function (x, j) { return '<tr data-j="' + j + '"><td>' + esc(x.d) + '</td>' + x.c.map(function (v, i) { return '<td data-r="' + i + '">' + (v ? '<span class="code ' + v + '" title="' + CODE[v] + '">' + v + '</span>' : '<span style="color:var(--line)">·</span>') + '</td>'; }).join('') + '<td class="esc">' + esc(x.e) + '</td></tr>'; }).join('') + '</tbody>';
+  function showRole(i) {
+    $$('#drTable [data-r]').forEach(function (c) { c.classList.toggle('hl', +c.getAttribute('data-r') === i); });
+    var g = { D: [], R: [], C: [], I: [] };
+    DEC.forEach(function (x) { if (x.c[i]) g[x.c[i]].push(x.d); });
+    var out = '<span class="kicker">Role view</span><h4>' + esc(ROLES[i]) + '</h4>';
+    ['D', 'R', 'C'].forEach(function (k) { if (g[k].length) out += '<p style="margin:.6rem 0 .2rem"><span class="code ' + k + '">' + k + '</span> <b>' + CODE[k] + '</b></p><ul>' + g[k].map(function (d) { return '<li>' + esc(d) + '</li>'; }).join('') + '</ul>'; });
+    if (!g.D.length && !g.R.length && !g.C.length) out += '<p>Informed on most decisions.</p>';
+    $('#drRole').innerHTML = out;
+  }
+  function showDec(j) {
+    $$('#drTable tbody tr').forEach(function (tr) { tr.classList.toggle('sel', +tr.getAttribute('data-j') === j); });
+    var x = DEC[j], dec = [], con = [], inf = [];
+    x.c.forEach(function (v, i) { if (v === 'D' || v === 'R') dec.push(ROLES[i] + ' (' + CODE[v].toLowerCase() + ')'); else if (v === 'C') con.push(ROLES[i]); else if (v === 'I') inf.push(ROLES[i]); });
+    $('#drDecision').innerHTML = '<span class="kicker">Decision view</span><h4>' + esc(x.d) + '</h4><p><b>Who decides:</b> ' + esc(dec.join(', ') || 'TBD') + '</p><p><b>Consulted:</b> ' + esc(con.join(', ') || 'None') + '</p><p><b>Informed:</b> ' + esc(inf.join(', ') || 'None') + '</p><p style="margin:0"><b>Escalate when:</b> ' + esc(x.e) + '</p>';
+  }
+  $$('#drTable thead th[data-r]').forEach(function (th) { th.addEventListener('click', function () { showRole(+th.getAttribute('data-r')); }); });
+  $$('#drTable tbody tr').forEach(function (tr) { tr.addEventListener('click', function () { showDec(+tr.getAttribute('data-j')); }); });
+  showRole(1); showDec(3);
+
+  /* ---------- Lifecycle ---------- */
+  var LC = [
+    { n: 'Create', o: 'Build only what must be built', w: 'Confirm the root cause calls for an asset. Check enterprise resources first. Build the smallest modular version that works, ideally as performance support.', ow: 'Designer creates; architect confirms reuse and structure; an owner is named before launch.', t: ['Root cause confirmed as knowledge or skill', 'No suitable enterprise or existing asset'] },
+    { n: 'Use', o: 'Put it where the work happens', w: 'Place assets in the workflow and in manager routines, not only in a catalog. Managers know how to reinforce them.', ow: 'Implementation specialist on rollout; managers on reinforcement.', t: ['Launch with the manager guide', 'Usage tracked from day one'] },
+    { n: 'Monitor', o: 'Watch usage and performance', w: 'Track whether it is used, whether behavior changed, and what it costs to keep current.', ow: 'Content owner, with data from available learning and performance sources.', t: ['Low or falling usage', 'Performance not moving'] },
+    { n: 'Update', o: 'Change on a trigger, not a calendar', w: 'Review when something changes: the process, product, policy, tool, or audience. Update responsibility is explicit.', ow: 'Named content owner, with the business or process owner confirming accuracy.', t: ['Process, product, policy, or tool change', 'Stakeholder or learner feedback', 'Set review date reached'] },
+    { n: 'Retire', o: 'Archive low-value content', w: 'Retire assets that are unused, outdated, or replaced. Fewer, better assets are easier to keep accurate.', ow: 'Architect decides within guardrails; leaders who rely on it are informed first.', t: ['Superseded by another asset', 'Usage below an agreed threshold', 'Maintenance cost exceeds value'] }
+  ];
+  $('#lcRing').innerHTML = LC.map(function (s, i) { return '<button class="lc-stage" data-i="' + i + '"><span class="i">0' + (i + 1) + '</span><span class="n">' + s.n + '</span><span class="o">' + s.o + '</span></button>'; }).join('');
+  function showLC(i) {
+    var s = LC[i];
+    $$('.lc-stage').forEach(function (b) { b.classList.toggle('on', +b.getAttribute('data-i') === i); });
+    $('#lcDetail').innerHTML = '<div><h4>What happens</h4><p>' + esc(s.w) + '</p></div><div><h4>Who owns it</h4><p>' + esc(s.ow) + '</p></div><div><h4>Triggers</h4><ul>' + s.t.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>';
+  }
+  $$('.lc-stage').forEach(function (b) { b.addEventListener('click', function () { showLC(+b.getAttribute('data-i')); }); });
+  showLC(0);
+  var LCP = [
+    ['Build only what must be built', 'If the root cause is not a knowledge or skill gap, building content adds maintenance without changing performance.'],
+    ['Reuse enterprise resources when appropriate', 'Enterprise Learning may already have it. Adapt before building.'],
+    ['Use smaller modular assets', 'Small pieces can be updated or retired on their own, without rebuilding a course.'],
+    ['Prefer performance support where possible', 'For infrequent or fast-changing tasks, a resource at the point of need beats recall from a course.'],
+    ['Assign content ownership', 'Every asset has a named owner from the day it launches.'],
+    ['Define review triggers', 'Process, policy, product, or tool changes prompt review automatically.'],
+    ['Archive low-value content', 'Unused or superseded assets are retired, not left to go stale.'],
+    ['Track maintenance burden', 'Maintenance cost is a prioritization criterion, not an afterthought.'],
+    ['Avoid long courses when in-flow support will work', 'Length is a cost. Use it only when the capability requires it.'],
+    ['Make update responsibility explicit', 'Who updates, who confirms accuracy, and how fast, agreed before launch.']
+  ];
+  $('#lcPrinciples').innerHTML = LCP.map(function (p, i) { return '<div class="lc-p"><span class="m">' + String(i + 1).padStart(2, '0') + '</span><div><b>' + esc(p[0]) + '</b><div class="more">' + esc(p[1]) + '</div></div></div>'; }).join('');
+  $$('.lc-p').forEach(function (p) { p.addEventListener('click', function () { p.classList.toggle('open'); }); });
+
+  /* ---------- Closer to the work ---------- */
+  var MODS = [
+    { n: 'In-the-moment learning', k: 'Flow', o: 'Employee, at the point of need', w: 'Quick answers while doing the work.' },
+    { n: 'Performance support', k: 'Flow', o: 'Learning team builds; process owner confirms accuracy', w: 'Infrequent, procedural, or fast-changing tasks.' },
+    { n: 'Workflow resources', k: 'Flow', o: 'Learning team with process and technology owners', w: 'Guidance embedded where the work is done.' },
+    { n: 'Reusable tools', k: 'Flow', o: 'Learning team builds once; managers and teams reuse', w: 'Templates, checklists, and guides used repeatedly.' },
+    { n: 'Short reinforcement', k: 'Rhythm', o: 'Manager, with assets from the learning team', w: 'Keeping a behavior alive after it is introduced.' },
+    { n: 'Team huddles', k: 'Rhythm', o: 'Manager', w: 'Shared practice and quick calibration inside existing meetings.' },
+    { n: 'Peer learning', k: 'Rhythm', o: 'Teams, with light structure from learning', w: 'Spreading what strong performers already do.' },
+    { n: 'Manager coaching', k: 'Rhythm', o: 'Manager, supported by a coaching guide', w: 'Individual application and feedback on real work.' },
+    { n: 'Guided practice', k: 'Structured', o: 'Learning team designs; manager or peer guides', w: 'Building skill on real scenarios with feedback.' },
+    { n: 'Targeted skill practice', k: 'Structured', o: 'Learning team', w: 'A specific skill gap confirmed by evidence.' },
+    { n: 'Formal training', k: 'Structured', o: 'Learning team, with business and Enterprise Learning input', w: 'New foundational capability, high-stakes practice, or shared standards across a population.' }
+  ];
+  var SITU = [
+    { n: 'New foundational capability', m: [10, 8, 7, 1], x: 'People are building something genuinely new to the role. Formal training is appropriate here, followed by guided practice and coaching so the learning transfers to the work.' },
+    { n: 'Inconsistent use of a known skill', m: [7, 5, 4, 9], x: 'People know how, but application is uneven. Manager coaching, huddles, and short reinforcement address application. Another course would repeat what they already know.' },
+    { n: 'Rare task with many steps', m: [1, 2, 3], x: 'Recall from a course will fade before the task comes up. Put support at the point of need.' },
+    { n: 'Fast-changing information', m: [0, 1, 2, 6], x: 'Static content goes stale quickly, as Jeff noted. In-the-moment resources with a clear owner and peer sharing stay current more easily.' },
+    { n: 'New tool rollout', m: [0, 2, 6, 9, 4], x: 'Start with access and workflow integration, then in-the-moment help, peer champions, and targeted practice for confirmed gaps.' }
+  ];
+  $('#spectrum').innerHTML = MODS.map(function (m, i) { return '<button class="mod" data-i="' + i + '"><small>' + m.k + '</small>' + esc(m.n) + '</button>'; }).join('');
+  $('#situ').innerHTML += SITU.map(function (s, i) { return '<button class="chip-btn" data-i="' + i + '">' + esc(s.n) + '</button>'; }).join('');
+  function showSitu(i) {
+    var s = SITU[i];
+    $$('#situ .chip-btn').forEach(function (b) { b.classList.toggle('on', +b.getAttribute('data-i') === i); });
+    $$('.mod').forEach(function (b) { var k = +b.getAttribute('data-i'), r = s.m.indexOf(k) > -1; b.classList.toggle('rec', r); b.classList.toggle('dim', !r); });
+    $('#situWhy').innerHTML = '<h4>' + esc(s.n) + '</h4><p>' + esc(s.x) + '</p><p style="margin:0;font-size:.82rem;color:var(--muted)">Starting mix: ' + esc(s.m.map(function (k) { return MODS[k].n; }).join(', ')) + '.</p>';
+  }
+  function showMod(i) {
+    var m = MODS[i];
+    $$('.mod').forEach(function (b) { b.classList.toggle('sel', +b.getAttribute('data-i') === i); });
+    $('#modWhy').innerHTML = '<h4>' + esc(m.n) + '</h4><p><b>Best when:</b> ' + esc(m.w) + '</p><p style="margin:0"><b>Who owns it:</b> ' + esc(m.o) + '</p>';
+  }
+  $$('#situ .chip-btn').forEach(function (b) { b.addEventListener('click', function () { showSitu(+b.getAttribute('data-i')); }); });
+  $$('.mod').forEach(function (b) { b.addEventListener('click', function () { showMod(+b.getAttribute('data-i')); }); });
+  showSitu(1); showMod(7);
+
+  /* ---------- Team ---------- */
+  var TEAM = [
+    { n: 'Understand strengths', a: 15, me: ['One-on-ones with each person on their craft, their best work, and what frustrates them', 'Watch how each person handles intake today', 'Map strengths across design, architecture, and implementation'], them: ['Share how they work and where they see friction', 'Name what is already working that should be protected'], sig: 'Each person can see their expertise reflected in the plan.', b: ['Stay curious', 'Coach others'] },
+    { n: 'Model discovery', a: 30, me: ['Lead discovery conversations on real requests with a team member alongside', 'Think aloud: why this question, why not training here', 'Show how to challenge a request respectfully with evidence'], them: ['Observe, then co-lead', 'Note which questions changed the outcome'], sig: 'Team members start asking root-cause questions on their own.', b: ['Tell it like it is', 'Customer obsessed'] },
+    { n: 'Practice on real requests', a: 50, me: ['Hand discovery to team members with the shared question set', 'Be available, not in the room by default', 'Debrief within days, while the details are fresh'], them: ['Run discovery and draft a recommendation', 'Try something new on lower-risk requests'], sig: 'Recommendations increasingly include non-training options with clear reasoning.', b: ['Stay agile', 'Take risks thoughtfully'] },
+    { n: 'Review decisions together', a: 70, me: ['Short regular calibration: compare how similar requests were handled', 'Look at patterns, not individual mistakes', 'Refine guardrails based on what the team learns'], them: ['Bring decisions to calibration, including the ones they were unsure of', 'Help shape the guardrails'], sig: 'Similar requests get similar answers across team members.', b: ['Own the outcome', 'Tell it like it is'] },
+    { n: 'Increase autonomy', a: 90, me: ['Shift from reviewing decisions to reviewing outcomes', 'Escalation by exception, defined together', 'Develop product thinking: portfolio, lifecycle, and measures'], them: ['Decide within guardrails and own results', 'Coach each other and newer colleagues'], sig: 'Rachel and I are rarely needed to resolve routine decisions.', b: ['Empower others', 'Own the outcome'] }
+  ];
+  $('#teamSteps').innerHTML = TEAM.map(function (t, i) { return '<button class="team-step" data-i="' + i + '"><span class="i">STAGE 0' + (i + 1) + '</span><span class="n">' + t.n + '</span><div class="au"><i style="width:' + t.a + '%"></i></div></button>'; }).join('');
+  function showTeam(i) {
+    var t = TEAM[i];
+    $$('.team-step').forEach(function (b) { b.classList.toggle('on', +b.getAttribute('data-i') === i); });
+    var ul = function (a) { return '<ul>' + a.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>'; };
+    $('#teamBody').innerHTML = '<div><h4>What I do</h4>' + ul(t.me) + '</div><div><h4>What the team does</h4>' + ul(t.them) + '</div><div><h4>Signal it is working</h4><p>' + esc(t.sig) + '</p><h4 style="margin-top:1rem">Behaviors in practice</h4>' + t.b.map(function (x) { return '<span class="bh">' + esc(x) + '</span>'; }).join('') + '</div>';
+  }
+  $$('.team-step').forEach(function (b) { b.addEventListener('click', function () { showTeam(+b.getAttribute('data-i')); }); });
+  showTeam(0);
+  var FB = [
+    ['How do you preserve craft expertise?', 'Design, architecture, and implementation skills are what make a good recommendation buildable. Consulting adds a step before them. It does not replace them. I would say that explicitly and show it in how work is credited.'],
+    ['How do you give feedback without undermining confidence?', 'Specific, timely, and about the decision rather than the person. Start with what the person saw that I missed, then the question I would have asked. Calibration happens as a group, so no one is singled out.'],
+    ['How do you encourage experimentation?', 'Agree which requests are lower risk and safe to try new approaches on. Treat a pilot that teaches us something as a success, and talk openly about my own misses.'],
+    ['How do you develop product thinking?', 'Shift the question from "what are we building" to "what problem are we solving, for whom, and how will we know." Portfolio reviews, lifecycle decisions, and outcome measures become shared work.'],
+    ['How do you connect work to business outcomes?', 'Every request starts with the outcome and ends with a measure the business leader cares about. That is the practical, business-anchored work Jeff described in Rachel.'],
+    ['What did this look like before?', 'At Schwab Charitable I led four direct reports and cross-functional teams, and introduced structured intake, governance, and prioritization where leaders were sending requests without shared priorities.']
+  ];
+  $('#fbGrid').innerHTML = FB.map(function (f) { return '<div class="fb"><div class="q">' + esc(f[0]) + '<span>+</span></div><div class="a">' + esc(f[1]) + '</div></div>'; }).join('');
+  $$('.fb').forEach(function (f) { f.addEventListener('click', function () { f.classList.toggle('open'); $('.q span', f).textContent = f.classList.contains('open') ? '−' : '+'; }); });
+
+  /* ---------- Measurement ---------- */
+  var LV = [
+    { n: 'Consulting effectiveness', m: ['Time to root cause', 'Handoffs per request', 'Stakeholder experience', 'Decision consistency across team members'], q: 'Are we solving the right problems quickly and consistently?', s: 'Intake records, simple stakeholder pulse after each engagement, periodic calibration reviews.' },
+    { n: 'Learning / capability', m: ['Readiness', 'Confidence', 'Skill demonstration', 'Manager observation'], q: 'Can people do what is needed?', s: 'Practice assessments, manager observation, self-reported confidence.' },
+    { n: 'Application', m: ['Workflow use', 'Behavior change', 'Manager reinforcement', 'Adoption'], q: 'Are people doing it in the work?', s: 'Usage data, manager check-ins, observation, system adoption data where available.' },
+    { n: 'Business performance', m: ['Quality', 'Productivity', 'Time to proficiency', 'Operational outcomes'], q: 'Did it move the result the business leader cares about?', s: 'Existing business metrics, agreed with the business leader and Line HR at intake.' }
+  ];
+  $('#levels').innerHTML = LV.map(function (l, i) { return '<button class="lvl" data-i="' + i + '"><span class="i">LEVEL ' + (i + 1) + '</span><span class="n">' + l.n + '</span></button>'; }).join('');
+  function showLv(i) {
+    var l = LV[i];
+    $$('.lvl').forEach(function (b) { b.classList.toggle('on', +b.getAttribute('data-i') === i); });
+    $('#lvlBody').innerHTML = '<div><h4>Measures</h4><ul>' + l.m.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div><div><h4>Question it answers</h4><p>' + esc(l.q) + '</p></div><div><h4>Likely sources, to validate</h4><p>' + esc(l.s) + '</p></div>';
+  }
+  $$('.lvl').forEach(function (b) { b.addEventListener('click', function () { showLv(+b.getAttribute('data-i')); }); });
+  showLv(0);
+
+  /* ---------- Not change ---------- */
+  var NC = [
+    ['Reorganize the team', 'Learn each person\'s strengths and how work flows first. Structure follows understanding.'],
+    ['Create a large governance process', 'A few shared questions and guardrails, light enough that the team uses them without being asked.'],
+    ['Centralize every decision', 'Push decisions to the person closest to the work, with escalation by exception.'],
+    ['Build a new learning platform', 'Understand the problem and what already exists before proposing any technology.'],
+    ['Replace enterprise resources unnecessarily', 'Adopt or adapt what Enterprise Learning provides. Build only what Brokerage uniquely needs.'],
+    ['Force one intake channel', 'Accept any door. Make what happens after the door consistent.'],
+    ['Assume traditional approaches are outdated', 'Formal programs remain right for some needs. The change is choosing them deliberately.'],
+    ['Introduce AI because it is available', 'Use AI where it removes real friction in intake, and only with human judgment kept in charge.']
+  ];
+  $('#ncGrid').innerHTML = NC.map(function (n) { return '<div class="nc" tabindex="0"><div class="nc-in"><div class="nc-f"><span class="x">Would not</span><p>' + esc(n[0]) + '</p><small>Select to see instead</small></div><div class="nc-b"><span class="x">Instead</span><p>' + esc(n[1]) + '</p></div></div></div>'; }).join('');
+  $$('.nc').forEach(function (n) { var t = function () { n.classList.toggle('flip'); }; n.addEventListener('click', t); n.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); t(); } }); });
+
+  /* ---------- Roadmap ---------- */
+  var RM = [
+    ['Mature consulting model', ['Refine from pilot learnings', 'Apply to all new requests', 'Periodic review with Rachel']],
+    ['Scale decision guardrails', ['Calibrate on real decisions', 'Widen team autonomy', 'Escalation by exception']],
+    ['Improve portfolio visibility', ['Single view of active work', 'Trade-offs visible to partners', '']],
+    ['Build stronger manager-owned learning', ['Pilot manager tools with one group', 'Extend what works', 'Reinforcement built into manager routines']],
+    ['Reduce content maintenance burden', ['Inventory and owner for each asset', 'Retire low-value content', 'Review triggers in place']],
+    ['Establish stronger performance measurement', ['Baseline consulting measures', 'Add application measures', 'Business outcome reporting']],
+    ['Expand AI-supported intake carefully', ['', 'Test with the team on real requests', 'Decide whether to extend, with human review kept in place']],
+    ['Build reusable learning patterns', ['Capture patterns from early work', 'Pattern library for the team', '']],
+    ['Improve team product capability', ['Product principles in practice', 'Lifecycle ownership by team members', 'Team leads portfolio reviews']],
+    ['Strengthen Line HR and Enterprise Learning partnership', ['Regular priority check-ins with Line HR', 'Shared standards with Enterprise Learning', 'Joint review of what to standardize vs. flex']]
+  ];
+  function renderRM(h) {
+    var hdr = '<div class="h">Theme</div><div class="h">Months 4-6</div><div class="h">Months 7-9</div><div class="h">Months 10-12</div>';
+    $('#rm').innerHTML = hdr + RM.map(function (r) {
+      var vis = h === 'all' || r[1][+h];
+      return '<div class="th' + (vis ? '' : ' row-dim') + '">' + esc(r[0]) + '</div>' + r[1].map(function (c, i) { var act = c && (h === 'all' || +h === i); return '<div class="cell' + (act ? ' act' : '') + (vis ? '' : ' row-dim') + '">' + esc(c) + '</div>'; }).join('');
+    }).join('');
+  }
+  $$('#rmFilter button').forEach(function (b) { b.addEventListener('click', function () { $$('#rmFilter button').forEach(function (x) { x.classList.toggle('on', x === b); }); renderRM(b.getAttribute('data-h')); }); });
+  renderRM('all');
+
+  /* ---------- print one page ---------- */
+  $('#printGlance').addEventListener('click', function () {
+    document.body.classList.add('print-glance');
+    window.print();
+    setTimeout(function () { document.body.classList.remove('print-glance'); }, 500);
+  });
+
+  onScroll();
+})();
+</script>
+</body>
+</html>
